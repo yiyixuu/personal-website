@@ -21,7 +21,10 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <div className={`top-right ${theme.palette.mode}`}>
-        <IconButton aria-label="change theme" onClick={colorMode.toggleColorMode}>
+        <IconButton
+          aria-label="change theme"
+          onClick={colorMode.toggleColorMode}
+        >
           <DarkModeIcon fontSize="large" />
         </IconButton>
       </div>
@@ -52,9 +55,15 @@ function App() {
           >
             <LogoDevIcon fontSize="large" />
           </IconButton>
-          <IconButton aria-label="resume">
-            <TextSnippetIcon fontSize="large" />
-          </IconButton>
+
+          <a
+            href="Yiyi_ Xu_resume.pdf"
+            download
+          >
+            <IconButton aria-label="resume">
+              <TextSnippetIcon fontSize="large" />
+            </IconButton>
+          </a>
         </Stack>
       </div>
     </ThemeProvider>
@@ -62,14 +71,14 @@ function App() {
 }
 
 export default function ToggleColorMode() {
-  const [mode, setMode] = React.useState('dark');
+  const [mode, setMode] = React.useState("dark");
   const colorMode = React.useMemo(
     () => ({
       toggleColorMode: () => {
-        setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+        setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
       },
     }),
-    [],
+    []
   );
 
   const theme = React.useMemo(
@@ -83,7 +92,7 @@ export default function ToggleColorMode() {
           MuiCssBaseline: {
             styleOverrides: {
               body: {
-                transition: 'background-color 0.5s ease-in-out',
+                transition: "background-color 0.5s ease-in-out",
               },
             },
           },
@@ -91,13 +100,13 @@ export default function ToggleColorMode() {
             styleOverrides: {
               // Add a smooth transition for background-color
               root: {
-                transition: 'background-color 0.5s ease-in-out',
+                transition: "background-color 0.5s ease-in-out",
               },
             },
           },
         },
       }),
-    [mode],
+    [mode]
   );
 
   return (
