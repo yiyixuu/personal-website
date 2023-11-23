@@ -56,10 +56,7 @@ function App() {
             <LogoDevIcon fontSize="large" />
           </IconButton>
 
-          <a
-            href="Yiyi_ Xu_resume.pdf"
-            download
-          >
+          <a href="Yiyi_ Xu_resume.pdf" download>
             <IconButton aria-label="resume">
               <TextSnippetIcon fontSize="large" />
             </IconButton>
@@ -72,23 +69,35 @@ function App() {
 
 export default function ToggleColorMode() {
   const [mode, setMode] = React.useState("dark");
+  const [initialRender, setInitialRender] = React.useState(true);
+
   const colorMode = React.useMemo(
     () => ({
       toggleColorMode: () => {
         setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
+        setInitialRender(false);
       },
     }),
     []
   );
 
-  const theme = React.useMemo(
+  const initialTheme = React.useMemo(
+    () =>
+      createTheme({
+        palette: {
+          mode,
+        },
+      }),
+    [mode]
+  );
+
+  const transitionedTheme = React.useMemo(
     () =>
       createTheme({
         palette: {
           mode,
         },
         components: {
-          // Add a smooth transition for background-color
           MuiCssBaseline: {
             styleOverrides: {
               body: {
@@ -98,7 +107,6 @@ export default function ToggleColorMode() {
           },
           MuiIconButton: {
             styleOverrides: {
-              // Add a smooth transition for background-color
               root: {
                 transition: "background-color 0.5s ease-in-out",
               },
@@ -108,6 +116,8 @@ export default function ToggleColorMode() {
       }),
     [mode]
   );
+
+  const theme = initialRender ? initialTheme : transitionedTheme;
 
   return (
     <ColorModeContext.Provider value={colorMode}>
