@@ -26,11 +26,10 @@ export function AboutSection() {
             className="relative h-[400px] md:h-[600px] rounded-2xl overflow-hidden"
           >
             <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=987&auto=format&fit=crop"
-              alt="Profile"
+              src="/images/headshot.jpeg"
+              alt="Profile picture of Yiyi Xu"
               fill
-              crossOrigin="anonymous"
-              className="object-cover"
+              className="object-cover object scale-100"
             />
           </motion.div>
 
@@ -40,42 +39,44 @@ export function AboutSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="text-3xl font-bold text-white mb-6">Hello, I'm <span className="text-blue-400">Your Name</span></h3>
+            <h3 className="text-3xl font-bold text-white mb-6">Hey, I'm <span className="text-blue-400">Yiyi Xu</span> 👋</h3>
 
             <div className="space-y-4 text-zinc-300">
               <p>
-                I'm a passionate web developer and designer with a keen eye for detail and a love for creating beautiful, functional websites.
+                I'm currently a student at the University of Toronto, pursuing a Bachelor of Applied Science in <a href="https://engsci.utoronto.ca/program/what-is-engsci/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">Engineering Science</a>. I'm pursuing a major in Robotics Engineering and a minor in Artificial Intelligence.
               </p>
 
               <p>
-                With expertise in modern frameworks and a strong foundation in design principles, I create seamless digital experiences that push the boundaries of what's possible on the web.
+                With experience in software development, 3D design, robotics, statistics, and consulting, I'm looking for opportunities to apply my board range of skills and learn more.
               </p>
 
               <p>
-                My approach combines technical precision with creative problem-solving, ensuring that each project not only looks stunning but also performs flawlessly.
+                In my spare time, I like playing poker and volleyball, watching the NBA and F1, and recently I've been learning how to DJ.
               </p>
             </div>
 
             <div className="mt-8 grid grid-cols-2 gap-6">
               <div>
+                <h4 className="text-xl font-bold text-white mb-3">Experiences</h4>
+                <ul className="space-y-2 text-zinc-400">
+                  <li>AI & Data Consulting Intern @ PwC</li>
+                  <li>Head of Strategy & Robotics Software Engineer @ FRC Team 610</li>
+                  <li>Project Lead @ St George Capital (Quant Finance Design Team)</li>
+                  <li>8+ Years Programming Experience</li>
+                </ul>
+              </div>
+              
+              <div>
                 <h4 className="text-xl font-bold text-white mb-3">Skills</h4>
                 <ul className="space-y-2 text-zinc-400">
-                  <li>React & Next.js</li>
-                  <li>UI/UX Design</li>
-                  <li>Tailwind CSS</li>
-                  <li>TypeScript</li>
+                  <li>Python, C, Java, JavaScript, TypeScript</li>
+                  <li>Fusion 360, Solidworks, OnShape</li>
+                  <li>SQL, MATLAB, R</li>
+                  <li>MS Office Suite (PowerPoint, Excel, Word)</li>
                 </ul>
               </div>
 
-              <div>
-                <h4 className="text-xl font-bold text-white mb-3">Experience</h4>
-                <ul className="space-y-2 text-zinc-400">
-                  <li>5+ Years Development</li>
-                  <li>20+ Projects Completed</li>
-                  <li>3+ Years Design Work</li>
-                  <li>Client-Focused Approach</li>
-                </ul>
-              </div>
+              
             </div>
           </motion.div>
         </div>

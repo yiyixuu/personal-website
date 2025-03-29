@@ -44,15 +44,32 @@ export function FeaturedProjects() {
   return (
     <section className="py-20 bg-black">
       <div className="container mx-auto px-4">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-4xl font-bold text-white text-center mb-16"
-        >
-          Featured Projects
-        </motion.h2>
+        <div className="flex flex-col items-center mb-16">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-4xl font-bold text-white text-center mb-6"
+          >
+            Featured Projects
+          </motion.h2>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <Link 
+              href="/projects"
+              className="inline-flex items-center px-6 py-3 bg-zinc-800 text-white rounded-full hover:bg-zinc-700 transition-colors"
+            >
+              View Project Gallery
+              <ChevronRight className="ml-2 h-4 w-4" />
+            </Link>
+          </motion.div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
@@ -90,6 +107,22 @@ export function FeaturedProjects() {
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mt-12 text-center"
+        >
+          <Link 
+            href="/projects"
+            className="inline-flex items-center px-6 py-3 bg-white text-black rounded-full hover:bg-zinc-200 transition-colors"
+          >
+            View All Projects
+            <ChevronRight className="ml-2 h-4 w-4" />
+          </Link>
+        </motion.div>
       </div>
     </section>
   );

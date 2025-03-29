@@ -13,10 +13,10 @@ export function Footer() {
             <h3 className="text-white text-sm font-medium mb-4">Navigation</h3>
             <ul className="space-y-2 text-sm">
               <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
-              <li><Link href="/about" className="hover:text-white transition-colors">About</Link></li>
-              <li><Link href="/projects" className="hover:text-white transition-colors">Projects</Link></li>
-              <li><Link href="/skills" className="hover:text-white transition-colors">Skills</Link></li>
-              <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
+              <li><Link href="/#about" className="hover:text-white transition-colors">About</Link></li>
+              <li><Link href="/#projects" className="hover:text-white transition-colors">Projects</Link></li>
+              <li><Link href="/#skills" className="hover:text-white transition-colors">Skills</Link></li>
+              <li><Link href="/#contact" className="hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
 
@@ -33,19 +33,46 @@ export function Footer() {
           <div>
             <h3 className="text-white text-sm font-medium mb-4">Connect</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">GitHub</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">LinkedIn</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Twitter</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Instagram</a></li>
+              <li>
+                <a 
+                  href="https://github.com/yiyixuu" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:text-white transition-colors"
+                >
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://www.linkedin.com/in/yiyi-xuu/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:text-white transition-colors"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://x.com/yiyixuu" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:text-white transition-colors"
+                >
+                  X
+                </a>
+              </li>
+              {/* <li><a href="#" className="hover:text-white transition-colors">Instagram</a></li> */}
             </ul>
           </div>
 
           <div>
             <h3 className="text-white text-sm font-medium mb-4">Contact</h3>
             <ul className="space-y-2 text-sm">
-              <li>yourname@example.com</li>
-              <li>+1 (555) 123-4567</li>
-              <li>San Francisco, CA</li>
+              <li>xuyiyi0516@gmail.com</li>
+              <li>+1 (647) 918-5596</li>
+              <li>Toronto, ON</li>
             </ul>
           </div>
         </div>
@@ -60,22 +87,18 @@ export function Footer() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M16 8C17.6569 8 19 6.65685 19 5C19 3.34315 17.6569 2 16 2C14.3431 2 13 3.34315 13 5C13 6.65685 14.3431 8 16 8Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M22.1556 11.5555C20.6667 10.0667 18.9 9.2 16.9778 9.15555C14.8333 9.17777 13.2 10.1667 12.1889 10.1667C11.1333 10.1667 9.82222 9.2 8.07778 9.24444C5.74444 9.31111 3.56667 10.6667 2.38889 12.8C-0.0444444 17.1111 1.79999 23.5555 4.13333 27.1111C5.29999 28.8444 6.67778 30.8 8.51111 30.7333C10.2778 30.6667 10.9778 29.6 13.1333 29.6C15.2889 29.6 15.9333 30.7333 17.7778 30.7C19.6667 30.6667 20.8889 28.9111 22.0222 27.1667C23.3889 25.1444 23.9556 23.1667 24 23.0444C23.9556 23 20.2 21.6 20.1778 17.3444C20.1556 13.7778 23.1556 12.1111 23.2889 12.0444C21.6333 9.64444 19.0333 9.33333 18.0889 9.26666C16.1556 9.11111 14.3444 10.3778 13.3 10.3778C12.2111 10.3778 10.7222 9.28889 9.03333 9.28889"
+                  d="M 10.663 23.158 L 7.782 23.158 L 7.782 17.133 L 2.538 8.842 L 5.927 8.842 L 9.296 14.506 L 12.597 8.842 L 15.927 8.842 L 10.663 17.152 L 10.663 23.158 Z  M 19.374 23.158 L 15.907 23.158 L 20.8 15.688 L 16.366 8.842 L 19.745 8.842 L 22.616 13.441 L 25.429 8.842 L 28.778 8.842 L 24.325 15.795 L 29.218 23.158 L 25.731 23.158 L 22.558 18.207 L 19.374 23.158 Z"
                   fill="currentColor"
                 />
               </svg>
             </Link>
-            <p className="text-xs">© {currentYear} Your Name. All rights reserved.</p>
+            <p className="text-xs">© {currentYear} Yiyi Xu. All rights reserved.</p>
           </div>
 
-          <div className="flex text-xs">
+          {/* <div className="flex text-xs">
             <Link href="/privacy" className="mr-6 hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white transition-colors">Terms of Use</Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

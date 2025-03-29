@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Yiyi Xu",
   description: "Yiyi Xu's personal portfolio website",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/icon.svg",
   },
 };
 
@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable}`}>
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
       </head>
       <ClientBody>
         {children}
