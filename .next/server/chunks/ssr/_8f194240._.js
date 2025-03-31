@@ -36,20 +36,55 @@ function getProjectUrl(slug) {
     return `/projects/${slug}`;
 }
 const projectData = {
-    "project-one": {
-        title: "aaaaaa",
-        description: "A showcase of modern web development.",
-        fullDescription: "A detailed description of Project One. This is where you can write about the project's goals, challenges, and outcomes in detail.",
-        imageUrl: "https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?q=80&w=870&auto=format&fit=crop",
+    "matboard-beam-bridge": {
+        title: "Matboard Beam Bridge",
+        description: "1200mm long bridge made from 1 piece of matboard",
+        fullDescription: `
+For the [CIV102](https://orientation.engsci.utoronto.ca/civ102-structures-and-materials/) course project, my team and I designed and constructed a 1200mm long bridge using only a single piece of matboard and contact cement.
+
+<iframe 
+  src="https://www.youtube.com/embed/KxGPTM63LrI" 
+  title="Bridge Testing Video"
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+></iframe>
+
+Our bridge:
+- Supported a peak moving load of **840 N** (over 180 lbs!!)
+- Tied for **first place** in our section based on peak load capacity
+- Achieved **third place** overall in the cohort for power-to-weight ratio efficiency
+
+I led the cross-sectional design process, which involved:
+- Performing extensive structural calculations
+- Iterating through multiple design variations
+- Optimizing performance through analytical modeling
+
+Initially attempting to use MATLAB and Python for calculations, I pivoted to Google Sheets for efficiency, which proved effective for our analytical needs. The project showcased practical applications of structural engineering principles and the importance of iterative design optimization.
+
+Below are the detailed structural calculations used to optimize our bridge design, including parameters for each section, stress analysis, and safety factors:
+
+<img src="/images/bridge-calculations.png" alt="Bridge structural calculations spreadsheet showing section parameters, stress analysis, and safety factors" className="rounded-lg border border-zinc-800" />
+      `,
+        imageUrl: "/images/bridge-group.png",
         technologies: [
-            "React",
-            "Next.js",
-            "TypeScript",
-            "Tailwind CSS"
+            "Fusion360",
+            "Structural Analysis",
+            "Civil Engineering Calculations",
+            "Google Sheets"
         ],
-        role: "Lead Developer",
-        duration: "3 months",
-        link: "https://github.com/yourusername/project-one",
+        role: "Civil Engineer",
+        collaborators: [
+            {
+                name: "Tiago Ferreira",
+                link: "https://www.linkedin.com/in/tiago-ferreira-59a664251/"
+            },
+            {
+                name: "Amely Vorontsov",
+                link: "https://www.linkedin.com/in/amelyvorontsov/"
+            }
+        ],
+        link: "https://drive.google.com/file/d/1xIALROID6iFDgDUVxBSVGb0973t5O4ST/view?usp=sharing",
+        linkText: "View Project Report",
         color: "bg-indigo-950",
         featured: true
     },
@@ -64,8 +99,18 @@ const projectData = {
             "OpenCV"
         ],
         role: "Machine Learning Engineer",
-        duration: "6 months",
+        collaborators: [
+            {
+                name: "Tiago Ferreira",
+                link: "https://www.linkedin.com/in/tiago-ferreira-59a664251/"
+            },
+            {
+                name: "Amely Vorontsov",
+                link: "https://www.linkedin.com/in/amelyvorontsov/"
+            }
+        ],
         link: "https://github.com/yourusername/project-two",
+        linkText: "View Repository",
         color: "bg-zinc-900",
         featured: true
     },
@@ -80,8 +125,18 @@ const projectData = {
             "Node.js"
         ],
         role: "Full Stack Developer",
-        duration: "4 months",
+        collaborators: [
+            {
+                name: "Tiago Ferreira",
+                link: "https://www.linkedin.com/in/tiago-ferreira-59a664251/"
+            },
+            {
+                name: "Amely Vorontsov",
+                link: "https://www.linkedin.com/in/amelyvorontsov/"
+            }
+        ],
         link: "https://github.com/yourusername/project-three",
+        linkText: "View Repository",
         color: "bg-blue-950",
         featured: true
     },
@@ -96,8 +151,18 @@ const projectData = {
             "PostgreSQL"
         ],
         role: "Backend Developer",
-        duration: "5 months",
+        collaborators: [
+            {
+                name: "Tiago Ferreira",
+                link: "https://www.linkedin.com/in/tiago-ferreira-59a664251/"
+            },
+            {
+                name: "Amely Vorontsov",
+                link: "https://www.linkedin.com/in/amelyvorontsov/"
+            }
+        ],
         link: "https://github.com/yourusername/project-four",
+        linkText: "View Repository",
         color: "bg-gray-900",
         featured: true
     }

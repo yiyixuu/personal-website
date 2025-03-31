@@ -492,20 +492,37 @@ function getProjectUrl(slug) {
     return `/projects/${slug}`;
 }
 const projectData = {
-    "project-one": {
-        title: "aaaaaa",
-        description: "A showcase of modern web development.",
-        fullDescription: "A detailed description of Project One. This is where you can write about the project's goals, challenges, and outcomes in detail.",
+    "matboard-beam-bridge": {
+        title: "Matboard Beam Bridge - CIV102 Course Project",
+        description: "1200mm long bridge made from 1 piece of matboard",
+        fullDescription: `
+## Project Overview
+As part of the CIV102 course project, my team designed and constructed a 1200mm long bridge using only a single piece of matboard and contact cement.
+
+### Achievements
+- Supported a peak moving load of **840 N** (over 180 lbs)
+- Tied for **first place** in our section based on peak load capacity
+- Achieved **third place** overall in the cohort for power-to-weight ratio efficiency
+
+### My Role
+I led the cross-sectional design process, which involved:
+- Performing extensive structural calculations
+- Iterating through multiple design variations
+- Optimizing performance through analytical modeling
+
+Initially attempting to use MATLAB and Python for calculations, I pivoted to Google Sheets for efficiency, which proved effective for our analytical needs. The project showcased practical applications of structural engineering principles and the importance of iterative design optimization.
+      `,
         imageUrl: "https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?q=80&w=870&auto=format&fit=crop",
         technologies: [
-            "React",
-            "Next.js",
-            "TypeScript",
-            "Tailwind CSS"
+            "Fusion360",
+            "Structural Analysis",
+            "Civil Engineering Calculations",
+            "Google Sheets"
         ],
         role: "Lead Developer",
-        duration: "3 months",
-        link: "https://github.com/yourusername/project-one",
+        duration: "1 month",
+        link: "https://drive.google.com/file/d/1xIALROID6iFDgDUVxBSVGb0973t5O4ST/view?usp=sharing",
+        linkText: "View Project Report",
         color: "bg-indigo-950",
         featured: true
     },
@@ -522,6 +539,7 @@ const projectData = {
         role: "Machine Learning Engineer",
         duration: "6 months",
         link: "https://github.com/yourusername/project-two",
+        linkText: "View Repository",
         color: "bg-zinc-900",
         featured: true
     },
@@ -538,6 +556,7 @@ const projectData = {
         role: "Full Stack Developer",
         duration: "4 months",
         link: "https://github.com/yourusername/project-three",
+        linkText: "View Repository",
         color: "bg-blue-950",
         featured: true
     },
@@ -554,6 +573,7 @@ const projectData = {
         role: "Backend Developer",
         duration: "5 months",
         link: "https://github.com/yourusername/project-four",
+        linkText: "View Repository",
         color: "bg-gray-900",
         featured: true
     }
@@ -1015,8 +1035,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$mo
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$left$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronLeft$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-left.js [app-ssr] (ecmascript) <export default as ChevronLeft>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$external$2d$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ExternalLink$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/external-link.js [app-ssr] (ecmascript) <export default as ExternalLink>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$scroll$2d$area$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/scroll-area.tsx [app-ssr] (ecmascript)");
+(()=>{
+    const e = new Error("Cannot find module 'react-markdown'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
 "use client";
+;
 ;
 ;
 ;
@@ -1051,14 +1078,14 @@ function ProjectDetail({ project }) {
                                     className: "h-4 w-4 mr-2"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                    lineNumber: 37,
+                                    lineNumber: 39,
                                     columnNumber: 15
                                 }, this),
                                 "Back to Projects"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                            lineNumber: 33,
+                            lineNumber: 35,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1069,7 +1096,7 @@ function ProjectDetail({ project }) {
                                     children: project.title
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                    lineNumber: 42,
+                                    lineNumber: 44,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1082,12 +1109,12 @@ function ProjectDetail({ project }) {
                                         className: "object-cover"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                        lineNumber: 47,
+                                        lineNumber: 49,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                    lineNumber: 46,
+                                    lineNumber: 48,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1101,21 +1128,27 @@ function ProjectDetail({ project }) {
                                                     children: "Overview"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                                    lineNumber: 58,
+                                                    lineNumber: 60,
                                                     columnNumber: 19
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-zinc-300 mb-6",
-                                                    children: project.fullDescription
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "prose prose-invert prose-zinc max-w-none",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ReactMarkdown, {
+                                                        children: project.fullDescription
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
+                                                        lineNumber: 62,
+                                                        columnNumber: 21
+                                                    }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                                    lineNumber: 59,
+                                                    lineNumber: 61,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                            lineNumber: 57,
+                                            lineNumber: 59,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1126,7 +1159,7 @@ function ProjectDetail({ project }) {
                                                     children: "Project Details"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                                    lineNumber: 63,
+                                                    lineNumber: 67,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1139,36 +1172,12 @@ function ProjectDetail({ project }) {
                                                                     children: "Role"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                                                    lineNumber: 66,
-                                                                    columnNumber: 23
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                    className: "text-white",
-                                                                    children: project.role
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                                                    lineNumber: 67,
-                                                                    columnNumber: 23
-                                                                }, this)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                                            lineNumber: 65,
-                                                            columnNumber: 21
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                                    className: "text-sm font-medium text-zinc-400",
-                                                                    children: "Duration"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
                                                                     lineNumber: 70,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                     className: "text-white",
-                                                                    children: project.duration
+                                                                    children: project.role
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
                                                                     lineNumber: 71,
@@ -1184,22 +1193,15 @@ function ProjectDetail({ project }) {
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                                                                     className: "text-sm font-medium text-zinc-400",
-                                                                    children: "Technologies"
+                                                                    children: "Duration"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
                                                                     lineNumber: 74,
                                                                     columnNumber: 23
                                                                 }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "flex flex-wrap gap-2 mt-1",
-                                                                    children: project.technologies.map((tech)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: "px-3 py-1 bg-black/30 rounded-full text-sm text-white",
-                                                                            children: tech
-                                                                        }, tech, false, {
-                                                                            fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                                                            lineNumber: 77,
-                                                                            columnNumber: 27
-                                                                        }, this))
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                    className: "text-white",
+                                                                    children: project.duration
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
                                                                     lineNumber: 75,
@@ -1211,76 +1213,116 @@ function ProjectDetail({ project }) {
                                                             lineNumber: 73,
                                                             columnNumber: 21
                                                         }, this),
-                                                        project.link && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                                                                     className: "text-sm font-medium text-zinc-400",
+                                                                    children: "Technologies"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
+                                                                    lineNumber: 78,
+                                                                    columnNumber: 23
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "flex flex-wrap gap-2 mt-1",
+                                                                    children: project.technologies.map((tech)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "px-3 py-1 bg-black/30 rounded-full text-sm text-white",
+                                                                            children: tech
+                                                                        }, tech, false, {
+                                                                            fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
+                                                                            lineNumber: 81,
+                                                                            columnNumber: 27
+                                                                        }, this))
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
+                                                                    lineNumber: 79,
+                                                                    columnNumber: 23
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
+                                                            lineNumber: 77,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        project.link && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                                    className: "text-sm font-medium text-zinc-400 mb-2",
                                                                     children: "Project Link"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                                                    lineNumber: 88,
+                                                                    lineNumber: 92,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                                     href: project.link,
                                                                     target: "_blank",
                                                                     rel: "noopener noreferrer",
-                                                                    className: "text-blue-400 hover:text-blue-300 transition-colors",
-                                                                    children: "View Repository"
-                                                                }, void 0, false, {
+                                                                    className: "inline-flex items-center px-6 py-3 bg-white text-black rounded-full hover:bg-zinc-200 transition-colors",
+                                                                    children: [
+                                                                        project.linkText,
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$external$2d$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ExternalLink$3e$__["ExternalLink"], {
+                                                                            className: "ml-2 h-4 w-4"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
+                                                                            lineNumber: 100,
+                                                                            columnNumber: 27
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
                                                                     fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                                                    lineNumber: 89,
+                                                                    lineNumber: 93,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                                            lineNumber: 87,
+                                                            lineNumber: 91,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                                    lineNumber: 64,
+                                                    lineNumber: 68,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                            lineNumber: 62,
+                                            lineNumber: 66,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                    lineNumber: 56,
+                                    lineNumber: 58,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                            lineNumber: 41,
+                            lineNumber: 43,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                    lineNumber: 28,
+                    lineNumber: 30,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                lineNumber: 27,
+                lineNumber: 29,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-            lineNumber: 26,
+            lineNumber: 28,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-        lineNumber: 25,
+        lineNumber: 27,
         columnNumber: 5
     }, this);
 }
