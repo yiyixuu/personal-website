@@ -1,6 +1,12 @@
+export type ProjectSlug = keyof typeof projectData;
+
+export function getProjectUrl(slug: ProjectSlug) {
+  return `/projects/${slug}`;
+}
+
 export const projectData = {
     "project-one": {
-      title: "Project One",
+      title: "aaaaaa",
       description: "A showcase of modern web development.",
       fullDescription:
         "A detailed description of Project One. This is where you can write about the project's goals, challenges, and outcomes in detail.",
@@ -11,6 +17,7 @@ export const projectData = {
       duration: "3 months",
       link: "https://github.com/yourusername/project-one",
       color: "bg-indigo-950",
+      featured: true,
     },
     "project-two": {
       title: "Project Two",
@@ -24,6 +31,7 @@ export const projectData = {
       duration: "6 months",
       link: "https://github.com/yourusername/project-two",
       color: "bg-zinc-900",
+      featured: true,
     },
     "project-three": {
       title: "Project Three",
@@ -37,6 +45,7 @@ export const projectData = {
       duration: "4 months",
       link: "https://github.com/yourusername/project-three",
       color: "bg-blue-950",
+      featured: true,
     },
     "project-four": {
       title: "Project Four",
@@ -50,6 +59,7 @@ export const projectData = {
       duration: "5 months",
       link: "https://github.com/yourusername/project-four",
       color: "bg-gray-900",
+      featured: true,
     },
   };
   

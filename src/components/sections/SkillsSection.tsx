@@ -1,50 +1,71 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code, Figma, Globe, BarChart, Cpu, Palette } from "lucide-react";
+import { Code, Database, Terminal, Layout, Cpu, Wrench, FileText, Globe, Settings } from "lucide-react";
 
 const skills = [
   {
     id: 1,
-    name: "Front-End Development",
-    description: "Building responsive and performant user interfaces with React, Next.js and TypeScript.",
+    name: "Core Programming",
+    description: "Python, Jupyter Notebook, Java, C, MATLAB, R Studio",
     icon: Code,
     colorClass: "bg-blue-900/20 text-blue-500"
   },
   {
     id: 2,
-    name: "UI/UX Design",
-    description: "Creating intuitive and visually appealing designs that enhance user experience.",
-    icon: Figma,
+    name: "Data & Analytics",
+    description: "SQL, Pandas, Matplotlib, Numpy, Streamlit",
+    icon: Database,
     colorClass: "bg-purple-900/20 text-purple-500"
   },
   {
     id: 3,
-    name: "Web Performance",
-    description: "Optimizing websites for speed, accessibility, and SEO to deliver the best user experience.",
+    name: "Web Development",
+    description: "JavaScript, TypeScript, React, Next.js, Tailwind CSS, Shadcn UI",
     icon: Globe,
     colorClass: "bg-green-900/20 text-green-500"
   },
   {
     id: 4,
-    name: "Data Visualization",
-    description: "Translating complex data into clear, interactive visual representations.",
-    icon: BarChart,
+    name: "Mobile Development",
+    description: "React Native, Expo Go",
+    icon: Terminal,
     colorClass: "bg-amber-900/20 text-amber-500"
   },
   {
     id: 5,
-    name: "Technical Architecture",
-    description: "Designing scalable and maintainable software architecture for complex applications.",
-    icon: Cpu,
+    name: "DevOps & Tools",
+    description: "Git, GitHub, Bash, Supabase, RESTful APIs",
+    icon: Settings,
     colorClass: "bg-rose-900/20 text-rose-500"
   },
   {
     id: 6,
-    name: "Creative Direction",
-    description: "Guiding the visual identity and creative elements of digital products.",
-    icon: Palette,
+    name: "Hardware & Systems",
+    description: "SystemVerilog, RISC-V, Circuit Design",
+    icon: Cpu,
     colorClass: "bg-indigo-900/20 text-indigo-500"
+  },
+  {
+    id: 7,
+    name: "CAD & Design",
+    description: "Autodesk Fusion 360, SolidWorks, OnShape",
+    icon: Layout,
+    colorClass: "bg-teal-900/20 text-teal-500"
+  },
+  {
+    id: 8,
+    name: "Documentation",
+    description: "LaTeX, Technical Writing, Documentation",
+    icon: FileText,
+    colorClass: "bg-cyan-900/20 text-cyan-500"
+  },
+  {
+    id: 9,
+    name: "Productivity Tools",
+    description: "MS Office Suite (Word, Excel, PowerPoint, Teams, PowerBI), Google Suite",
+    icon: Wrench,
+    colorClass: "bg-zinc-900/20 text-zinc-500"
   }
 ];
 
@@ -59,9 +80,9 @@ export function SkillsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-white mb-4">My Skills</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Technical Skills</h2>
           <p className="text-zinc-400 max-w-2xl mx-auto">
-            A comprehensive toolkit of technical and creative abilities that power my development work
+            A comprehensive overview of my technical abilities and development expertise
           </p>
         </motion.div>
 

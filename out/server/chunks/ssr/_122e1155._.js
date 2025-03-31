@@ -23,10 +23,14 @@ __turbopack_context__.n(__turbopack_context__.i("[project]/src/app/not-found.tsx
 var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.s({
+    "getProjectUrl": (()=>getProjectUrl),
     "projectData": (()=>projectData)
 });
+function getProjectUrl(slug) {
+    return `/projects/${slug}`;
+}
 const projectData = {
-    "project-one": {
+    "": {
         title: "Project One",
         description: "A showcase of modern web development.",
         fullDescription: "A detailed description of Project One. This is where you can write about the project's goals, challenges, and outcomes in detail.",
@@ -224,14 +228,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$projects$2f5b$
 ;
 ;
 ;
-const dynamic = "force-static"; // 👈 THIS IS THE MISSING PIECE
+const dynamic = "force-static";
 function generateStaticParams() {
     return Object.keys(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$projectData$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["projectData"]).map((slug)=>({
             slug
         }));
 }
-function generateMetadata({ params }) {
-    const project = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$projectData$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["projectData"][params.slug];
+async function generateMetadata({ params }) {
+    const slug = await params.slug;
+    const project = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$projectData$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["projectData"][slug];
     if (!project) return {
         title: "Project not found"
     };
@@ -240,8 +245,8 @@ function generateMetadata({ params }) {
         description: project.description
     };
 }
-function ProjectPage({ params }) {
-    const slug = params.slug;
+async function ProjectPage({ params }) {
+    const slug = await params.slug;
     const project = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$projectData$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["projectData"][slug];
     if (!project) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {

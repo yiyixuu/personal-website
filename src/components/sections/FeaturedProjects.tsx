@@ -4,41 +4,15 @@ import { ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { projectData, getProjectUrl, ProjectSlug } from "@/lib/projectData";
 
-const projects = [
-  {
-    id: 1,
-    title: "Project One",
-    description: "A showcase of modern web development.",
-    imageUrl: "https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?q=80&w=870&auto=format&fit=crop",
-    link: "/projects/project-one",
-    color: "bg-indigo-950"
-  },
-  {
-    id: 2,
-    title: "Project Two",
-    description: "Pushing design boundaries with innovation.",
-    imageUrl: "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1974&auto=format&fit=crop",
-    link: "/projects/project-two",
-    color: "bg-zinc-900"
-  },
-  {
-    id: 3,
-    title: "Project Three",
-    description: "Seamless user experiences through code.",
-    imageUrl: "https://images.unsplash.com/photo-1481487196290-c152efe083f5?q=80&w=962&auto=format&fit=crop",
-    link: "/projects/project-three",
-    color: "bg-blue-950"
-  },
-  {
-    id: 4,
-    title: "Project Four",
-    description: "Innovative solutions for modern problems.",
-    imageUrl: "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?q=80&w=1974&auto=format&fit=crop",
-    link: "/projects/project-four",
-    color: "bg-gray-900"
-  }
-];
+const projects = Object.entries(projectData)
+  .filter(([_, data]) => data.featured)
+  .map(([slug, data]) => ({
+    id: slug,
+    ...data,
+    link: getProjectUrl(slug as ProjectSlug),
+  }));
 
 export function FeaturedProjects() {
   return (

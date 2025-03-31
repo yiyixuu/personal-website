@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { projectData, getProjectUrl, ProjectSlug } from "@/lib/projectData";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -23,10 +24,20 @@ export function Footer() {
           <div>
             <h3 className="text-white text-sm font-medium mb-4">Projects</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/projects/project-one" className="hover:text-white transition-colors">Project One</Link></li>
-              <li><Link href="/projects/project-two" className="hover:text-white transition-colors">Project Two</Link></li>
-              <li><Link href="/projects/project-three" className="hover:text-white transition-colors">Project Three</Link></li>
-              <li><Link href="/projects/project-four" className="hover:text-white transition-colors">Project Four</Link></li>
+              {Object.entries(projectData)
+                .filter(([_, data]) => data.featured)
+                .map(([slug, data]) => (
+                  <li key={slug}>
+                    <Link href={getProjectUrl(slug as ProjectSlug)} className="hover:text-white transition-colors">
+                      {data.title}
+                    </Link>
+                  </li>
+                ))}
+              <li>
+                <Link href="/projects" className="hover:text-white transition-colors">
+                  View All Projects
+                </Link>
+              </li>
             </ul>
           </div>
 

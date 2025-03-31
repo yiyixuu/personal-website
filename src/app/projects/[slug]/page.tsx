@@ -1,9 +1,10 @@
-import { projectData } from "@/lib/projectData";
+import { projectData, type ProjectSlug } from "@/lib/projectData";
 import { MainNav } from "@/components/nav/MainNav";
 import { Footer } from "@/components/footer/Footer";
 import { ProjectDetail } from "./ProjectDetail";
+import { notFound } from "next/navigation";
 
-export const dynamic = "force-static"; // 👈 THIS IS THE MISSING PIECE
+export const dynamic = "force-static";
 
 export function generateStaticParams() {
   return Object.keys(projectData).map((slug) => ({
@@ -11,26 +12,28 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const project = projectData[params.slug as keyof typeof projectData];
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const slug = await params.slug;
+  
+  if (!Object.keys(projectData).includes(slug)) {
+    return { title: "Project Not Found" };
+  }
 
-  if (!project) return { title: "Project not found" };
-
+  const project = projectData[slug as ProjectSlug];
   return {
     title: project.title,
     description: project.description,
   };
 }
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
-  const slug = params.slug;
-
-  const project = projectData[slug as keyof typeof projectData];
-
-  if (!project) {
-    return <div>Project not found</div>;
+export default async function ProjectPage({ params }: { params: { slug: string } }) {
+  const slug = await params.slug;
+  
+  if (!Object.keys(projectData).includes(slug)) {
+    notFound();
   }
 
+  const project = projectData[slug as ProjectSlug];
   return (
     <>
       <MainNav />
