@@ -442,8 +442,8 @@ function generateStaticParams() {
             slug
         }));
 }
-async function generateMetadata({ params }) {
-    const slug = params.slug;
+async function generateMetadata(props) {
+    const { slug } = await props.params;
     if (!Object.keys(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$projectData$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["projectData"]).includes(slug)) {
         return {
             title: "Project Not Found"
@@ -455,8 +455,8 @@ async function generateMetadata({ params }) {
         description: project.description
     };
 }
-async function ProjectPage({ params }) {
-    const slug = params.slug;
+async function ProjectPage(props) {
+    const { slug } = await props.params;
     if (!Object.keys(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$projectData$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["projectData"]).includes(slug)) {
         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$navigation$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["notFound"])();
     }
@@ -465,26 +465,32 @@ async function ProjectPage({ params }) {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$nav$2f$MainNav$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["MainNav"], {}, void 0, false, {
                 fileName: "[project]/src/app/projects/[slug]/page.tsx",
-                lineNumber: 39,
+                lineNumber: 44,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
                 className: "min-h-screen bg-black pt-16 pb-20",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$projects$2f5b$slug$5d2f$ProjectDetail$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ProjectDetail"], {
-                    project: project
+                    project: {
+                        ...project,
+                        collaborators: project.collaborators?.map((c)=>({
+                                name: c.name,
+                                link: c.link || '' // Ensure link is always a string
+                            }))
+                    }
                 }, void 0, false, {
                     fileName: "[project]/src/app/projects/[slug]/page.tsx",
-                    lineNumber: 41,
+                    lineNumber: 46,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/projects/[slug]/page.tsx",
-                lineNumber: 40,
+                lineNumber: 45,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$footer$2f$Footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Footer"], {}, void 0, false, {
                 fileName: "[project]/src/app/projects/[slug]/page.tsx",
-                lineNumber: 43,
+                lineNumber: 54,
                 columnNumber: 7
             }, this)
         ]

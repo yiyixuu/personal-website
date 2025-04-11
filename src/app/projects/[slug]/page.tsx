@@ -6,14 +6,19 @@ import { notFound } from "next/navigation";
 
 export const dynamic = "force-static";
 
+type Props = {
+  params: Promise<{ slug: string }>
+  searchParams: { [key: string]: string | string[] | undefined }
+}
+
 export function generateStaticParams() {
   return Object.keys(projectData).map((slug) => ({
     slug,
   }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const slug = params.slug;
+export async function generateMetadata(props: Props) {
+  const { slug } = await props.params;
   
   if (!Object.keys(projectData).includes(slug)) {
     return { title: "Project Not Found" };
@@ -26,8 +31,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-export default async function ProjectPage({ params }: { params: { slug: string } }) {
-  const slug = params.slug;
+export default async function ProjectPage(props: Props) {
+  const { slug } = await props.params;
   
   if (!Object.keys(projectData).includes(slug)) {
     notFound();
@@ -38,7 +43,13 @@ export default async function ProjectPage({ params }: { params: { slug: string }
     <>
       <MainNav />
       <main className="min-h-screen bg-black pt-16 pb-20">
-        <ProjectDetail project={project} />
+        <ProjectDetail project={{
+          ...project,
+          collaborators: project.collaborators?.map(c => ({
+            name: c.name,
+            link: c.link || '' // Ensure link is always a string
+          }))
+        }} />
       </main>
       <Footer />
     </>
