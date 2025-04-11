@@ -759,7 +759,7 @@ I implemented the AI functionalities, including the recipe scanning and image re
     "physics-experiments": {
         title: "Various Physics Experiments",
         description: "from PHY180, PHY293, PHY294",
-        imageUrl: "/images/physics.jpg",
+        imageUrl: "/images/physics.jpeg",
         fullDescription: `
 As part of the Engineering Science curriculum, I took 3 physics courses: [PHY180](https://www.physics.utoronto.ca/undergraduate/current-and-prospective-students/undergraduate-courses/elements-of-physics-i/) (Classical Mechanics), [PHY293](https://www.physics.utoronto.ca/undergraduate/current-and-prospective-students/undergraduate-courses/waves-and-modern-physics/) (Waves & Modern Physics), and [PHY294](https://www.physics.utoronto.ca/undergraduate/current-and-prospective-students/undergraduate-courses/quantum-and-thermal-physics/) (Quantum & Thermal Physics). Here are various physics experiments I did in each course and my reports on them.
 
