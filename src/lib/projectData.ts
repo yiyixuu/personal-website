@@ -24,6 +24,8 @@ export const projectData: Record<string, Project> = {
     description: "Mobile push notifications for your expiring groceries",
     imageUrl: "/images/Freshify.png",
     fullDescription: `
+  Every year, households around the world waste over 630 million tonnes of food, costing approximately $1 trillion and contributing 8-10% of global greenhouse gas emissions. This isn't just an environmental crisis, it's hitting families financially as well. A typical American family could save around $1,600 annually by eliminating food waste. The problem exists across cultures and continents, with per capita food waste ranging from 100kg/year in North America to 5kg/year in Sub-Saharan Africa.
+  
   Freshify is a mobile app that uses push notifications to remind you when your groceries are about to expire.
   
   Every time you come back from the grocery store, simply snap a photo of your receipt and take a photo of the items, and Freshify will (using GPT-4o's image recognition) automatically detect the items' expiration date and notify you when they're about to expire.
@@ -460,5 +462,4 @@ We ranked 1st of out 14 teams by profit margins! (16% return on $100k)
     color: "bg-gray-900",
     featured: false,
   },
-
 };
