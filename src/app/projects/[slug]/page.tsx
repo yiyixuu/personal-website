@@ -12,6 +12,11 @@ type Props = {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }
 
+type Collaborator = {
+  name: string;
+  link?: string;
+}
+
 export function generateStaticParams() {
   return Object.keys(projectData).map((slug) => ({
     slug,
@@ -47,9 +52,9 @@ export default async function ProjectPage(props: Props) {
         <main className="bg-black pt-16 pb-20">
           <ProjectDetail project={{
             ...project,
-            collaborators: project.collaborators?.map(c => ({
+            collaborators: project.collaborators?.map((c: Collaborator) => ({
               name: c.name,
-              link: c.link || '' // Ensure link is always a string
+              link: c.link || ''
             }))
           }} />
           <Footer />

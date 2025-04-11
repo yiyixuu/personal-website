@@ -14,16 +14,16 @@ interface ProjectDetailProps {
   project: {
     title: string;
     description: string;
-    fullDescription: string;
+    fullDescription?: string;
     imageUrl: string;
     technologies: string[];
-    role: string;
-    link: string;
+    role?: string;
+    link?: string;
     color: string;
-    linkText: string;
+    linkText?: string;
     collaborators?: {
       name: string;
-      link: string;
+      link?: string;
     }[];
   };
 }
@@ -64,87 +64,91 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="md:col-span-2">
                   <h2 className="text-2xl font-bold text-white mb-4">Overview</h2>
-                  <div className="text-zinc-300">
-                    <ReactMarkdown 
-                      remarkPlugins={[remarkGfm]}
-                      rehypePlugins={[rehypeRaw]}
-                      components={{
-                        p: ({children}) => {
-                          // Check if the paragraph contains only images
-                          const containsOnlyImages = React.Children.toArray(children).every(
-                            child => React.isValidElement(child) && child.type === 'img'
-                          );
-
-                          if (containsOnlyImages) {
-                            return (
-                              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                                {children}
-                              </div>
+                  {project.fullDescription && (
+                    <div className="text-zinc-300">
+                      <ReactMarkdown 
+                        remarkPlugins={[remarkGfm]}
+                        rehypePlugins={[rehypeRaw]}
+                        components={{
+                          p: ({children}) => {
+                            // Check if the paragraph contains only images
+                            const containsOnlyImages = React.Children.toArray(children).every(
+                              child => React.isValidElement(child) && child.type === 'img'
                             );
-                          }
 
-                          return (
-                            <p className="text-zinc-300 leading-relaxed mb-6">{children}</p>
-                          );
-                        },
-                        ul: ({children}) => (
-                          <ul className="list-disc list-outside ml-6 mb-6 space-y-2">{children}</ul>
-                        ),
-                        li: ({children}) => (
-                          <li className="text-zinc-300">{children}</li>
-                        ),
-                        h1: ({children}) => (
-                          <h1 className="text-1xl font-bold text-white mb-8 mt-12">{children}</h1>
-                        ),
-                        h2: ({children}) => (
-                          <h2 className="text-2xl font-bold text-white mb-6 mt-10">{children}</h2>
-                        ),
-                        h3: ({children}) => (
-                          <h3 className="text-3xl font-bold text-white mb-4 mt-8">{children}</h3>
-                        ),
-                        strong: ({children}) => (
-                          <strong className="text-white font-semibold">{children}</strong>
-                        ),
-                        a: ({href, children}) => (
-                          <a 
-                            href={href}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-blue-400 hover:text-blue-300 underline transition-colors"
-                          >
-                            {children}
-                          </a>
-                        ),
-                        iframe: ({node, ...props}) => (
-                          <div className="aspect-video mb-6">
-                            <iframe
-                              className="w-full h-full rounded-lg"
-                              {...props}
-                              allowFullScreen
+                            if (containsOnlyImages) {
+                              return (
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                                  {children}
+                                </div>
+                              );
+                            }
+
+                            return (
+                              <p className="text-zinc-300 leading-relaxed mb-6">{children}</p>
+                            );
+                          },
+                          ul: ({children}) => (
+                            <ul className="list-disc list-outside ml-6 mb-6 space-y-2">{children}</ul>
+                          ),
+                          li: ({children}) => (
+                            <li className="text-zinc-300">{children}</li>
+                          ),
+                          h1: ({children}) => (
+                            <h1 className="text-3xl font-bold text-white mb-8 mt-12">{children}</h1>
+                          ),
+                          h2: ({children}) => (
+                            <h2 className="text-2xl font-bold text-white mb-6 mt-10">{children}</h2>
+                          ),
+                          h3: ({children}) => (
+                            <h3 className="text-1xl font-bold text-white mb-4 mt-8">{children}</h3>
+                          ),
+                          strong: ({children}) => (
+                            <strong className="text-white font-semibold">{children}</strong>
+                          ),
+                          a: ({href, children}) => (
+                            <a 
+                              href={href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-blue-400 hover:text-blue-300 underline transition-colors"
+                            >
+                              {children}
+                            </a>
+                          ),
+                          iframe: ({node, ...props}) => (
+                            <div className="aspect-video mb-6">
+                              <iframe
+                                className="w-full h-full rounded-lg"
+                                {...props}
+                                allowFullScreen
+                              />
+                            </div>
+                          ),
+                          img: ({src, alt, className}) => (
+                            <img 
+                              src={src} 
+                              alt={alt} 
+                              className={`${className} w-full`}
                             />
-                          </div>
-                        ),
-                        img: ({src, alt, className}) => (
-                          <img 
-                            src={src} 
-                            alt={alt} 
-                            className={`${className} w-full`}
-                          />
-                        ),
-                      }}
-                    >
-                      {project.fullDescription}
-                    </ReactMarkdown>
-                  </div>
+                          ),
+                        }}
+                      >
+                        {project.fullDescription}
+                      </ReactMarkdown>
+                    </div>
+                  )}
                 </div>
 
                 <div className="bg-black/20 rounded-xl p-6">
                   <h3 className="text-xl font-bold text-white mb-4">Project Details</h3>
                   <div className="space-y-4">
-                    <div>
-                      <h4 className="text-sm font-medium text-zinc-400">Role</h4>
-                      <p className="text-white">{project.role}</p>
-                    </div>
+                    {project.role && (
+                      <div>
+                        <h4 className="text-sm font-medium text-zinc-400">Role</h4>
+                        <p className="text-white">{project.role}</p>
+                      </div>
+                    )}
                     {project.collaborators && project.collaborators.length > 0 && (
                       <div>
                         <h4 className="text-sm font-medium text-zinc-400">Collaborators</h4>
@@ -174,20 +178,22 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
                         </div>
                       </div>
                     )}
-                    <div>
-                      <h4 className="text-sm font-medium text-zinc-400">Technologies</h4>
-                      <div className="flex flex-wrap gap-2 mt-1">
-                        {project.technologies.map((tech) => (
-                          <span 
-                            key={tech}
-                            className="px-3 py-1 bg-black/30 rounded-full text-sm text-white"
-                          >
-                            {tech}
-                          </span>
-                        ))}
+                    {project.technologies && project.technologies.length > 0 && (
+                      <div>
+                        <h4 className="text-sm font-medium text-zinc-400">Technologies</h4>
+                        <div className="flex flex-wrap gap-2 mt-1">
+                          {project.technologies.map((tech) => (
+                            <span 
+                              key={tech}
+                              className="px-3 py-1 bg-black/30 rounded-full text-sm text-white"
+                            >
+                              {tech}
+                            </span>
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                    {project.link && (
+                    )}
+                    {project.link && project.linkText && (
                       <div>
                         <h4 className="text-sm font-medium text-zinc-400 mb-2">Project Link</h4>
                         <a
