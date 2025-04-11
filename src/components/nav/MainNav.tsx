@@ -57,7 +57,7 @@ export function MainNav() {
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-full bg-zinc-950 border-zinc-800">
+            <SheetContent side="right" className="w-full bg-zinc-950 border-zinc-900 [&_button>svg]:text-white">
               <div className="flex items-center justify-between mb-8">
                 <Link href="/" className="text-white" onClick={() => setIsOpen(false)}>
                   <svg
@@ -72,10 +72,6 @@ export function MainNav() {
                     />
                   </svg>
                 </Link>
-                <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)} className="text-white">
-                  <X className="h-5 w-5" />
-                  <span className="sr-only">Close menu</span>
-                </Button>
               </div>
               <nav className="flex flex-col space-y-6">
                 {navigationItems.map((item) => (

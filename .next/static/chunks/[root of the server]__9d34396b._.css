@@ -858,6 +858,10 @@ h1, h2, h3, h4, h5, h6 {
   animation: 2s cubic-bezier(.4, 0, .6, 1) infinite pulse;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .touch-none {
   touch-action: none;
 }
@@ -1006,6 +1010,14 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: .75rem;
 }
 
+.rounded-none {
+  border-radius: 0;
+}
+
+.rounded {
+  border-radius: .25rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1051,6 +1063,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .border-zinc-800\/40 {
   border-color: #27272a66;
+}
+
+.border-zinc-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(24 24 27 / var(--tw-border-opacity, 1));
 }
 
 .border-l-transparent {
@@ -1951,6 +1968,15 @@ h1, h2, h3, h4, h5, h6 {
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+}
+
+.\[\&_button\>svg\]\:text-white button > svg {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.\[\&_button\[data-state\=open\]\]\:bg-transparent button[data-state="open"] {
+  background-color: #0000;
 }
 
 .\[\&_svg\]\:pointer-events-none svg {
