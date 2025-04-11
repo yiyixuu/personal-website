@@ -13,7 +13,7 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const slug = await params.slug;
+  const slug = params.slug;
   
   if (!Object.keys(projectData).includes(slug)) {
     return { title: "Project Not Found" };
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 }
 
 export default async function ProjectPage({ params }: { params: { slug: string } }) {
-  const slug = await params.slug;
+  const slug = params.slug;
   
   if (!Object.keys(projectData).includes(slug)) {
     notFound();

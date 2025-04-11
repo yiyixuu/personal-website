@@ -137,7 +137,7 @@ Despite initial roadblocks with Google’s API, switching to IBM Watson led to q
         link: "https://devpost.com/software/telenotes",
         linkText: "View Devpost Submission",
         color: "bg-zinc-900",
-        featured: true
+        featured: false
     },
     "bridge": {
         title: "BRIDGE",
@@ -216,7 +216,7 @@ Our inspiration was online games like Scribbl.io and Gartic Phone, but with a Wh
         link: "https://devpost.com/software/wald-io",
         linkText: "View Devpost Submission",
         color: "bg-gray-900",
-        featured: true
+        featured: false
     },
     "freshify": {
         title: "Freshify",
@@ -443,7 +443,7 @@ function generateStaticParams() {
         }));
 }
 async function generateMetadata({ params }) {
-    const slug = await params.slug;
+    const slug = params.slug;
     if (!Object.keys(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$projectData$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["projectData"]).includes(slug)) {
         return {
             title: "Project Not Found"
@@ -456,7 +456,7 @@ async function generateMetadata({ params }) {
     };
 }
 async function ProjectPage({ params }) {
-    const slug = await params.slug;
+    const slug = params.slug;
     if (!Object.keys(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$projectData$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["projectData"]).includes(slug)) {
         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$navigation$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["notFound"])();
     }

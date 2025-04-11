@@ -631,7 +631,7 @@ Despite initial roadblocks with Google’s API, switching to IBM Watson led to q
         link: "https://devpost.com/software/telenotes",
         linkText: "View Devpost Submission",
         color: "bg-zinc-900",
-        featured: true
+        featured: false
     },
     "bridge": {
         title: "BRIDGE",
@@ -710,7 +710,7 @@ Our inspiration was online games like Scribbl.io and Gartic Phone, but with a Wh
         link: "https://devpost.com/software/wald-io",
         linkText: "View Devpost Submission",
         color: "bg-gray-900",
-        featured: true
+        featured: false
     },
     "freshify": {
         title: "Freshify",
