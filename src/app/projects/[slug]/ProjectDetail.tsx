@@ -8,6 +8,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
+import React from 'react';
 
 interface ProjectDetailProps {
   project: {
@@ -68,20 +69,38 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
                       remarkPlugins={[remarkGfm]}
                       rehypePlugins={[rehypeRaw]}
                       components={{
-                        p: ({children}) => (
-                          <p className="text-zinc-300 leading-relaxed mb-6">{children}</p>
-                        ),
+                        p: ({children}) => {
+                          // Check if the paragraph contains only images
+                          const containsOnlyImages = React.Children.toArray(children).every(
+                            child => React.isValidElement(child) && child.type === 'img'
+                          );
+
+                          if (containsOnlyImages) {
+                            return (
+                              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                                {children}
+                              </div>
+                            );
+                          }
+
+                          return (
+                            <p className="text-zinc-300 leading-relaxed mb-6">{children}</p>
+                          );
+                        },
                         ul: ({children}) => (
                           <ul className="list-disc list-outside ml-6 mb-6 space-y-2">{children}</ul>
                         ),
                         li: ({children}) => (
                           <li className="text-zinc-300">{children}</li>
                         ),
+                        h1: ({children}) => (
+                          <h1 className="text-1xl font-bold text-white mb-8 mt-12">{children}</h1>
+                        ),
                         h2: ({children}) => (
-                          <h2 className="text-3xl font-bold text-white mb-6 mt-10">{children}</h2>
+                          <h2 className="text-2xl font-bold text-white mb-6 mt-10">{children}</h2>
                         ),
                         h3: ({children}) => (
-                          <h3 className="text-2xl font-bold text-white mb-4 mt-8">{children}</h3>
+                          <h3 className="text-3xl font-bold text-white mb-4 mt-8">{children}</h3>
                         ),
                         strong: ({children}) => (
                           <strong className="text-white font-semibold">{children}</strong>
@@ -104,6 +123,13 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
                               allowFullScreen
                             />
                           </div>
+                        ),
+                        img: ({src, alt, className}) => (
+                          <img 
+                            src={src} 
+                            alt={alt} 
+                            className={`${className} w-full`}
+                          />
                         ),
                       }}
                     >

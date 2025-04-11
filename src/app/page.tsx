@@ -9,9 +9,9 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default function Home() {
   return (
-    <>
+    <div className="h-screen flex flex-col">
       <MainNav />
-      <ScrollArea className="min-h-screen">
+      <ScrollArea className="flex-1">
         <main className="bg-black text-white">
           <HeroSection />
           <section id="about" className="min-h-screen">
@@ -26,9 +26,9 @@ export default function Home() {
           <section id="contact" className="min-h-screen">
             <ContactSection />
           </section>
+          <Footer />
         </main>
       </ScrollArea>
-      <Footer />
-    </>
+    </div>
   );
 }

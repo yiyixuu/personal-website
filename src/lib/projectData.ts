@@ -62,7 +62,7 @@ Below are the detailed structural calculations used to optimize our bridge desig
     description: "Search history for your brain.",
     fullDescription: `## Telenotes – Voice to Thought Pipeline
 
-For JAMHacks 6, my team and I built **Telenotes**, which is a mobile app that transforms spoken thoughts into organized notes using natural language processing. The idea stemmed from a simple question: _why do we forget most of our thoughts?_ We wanted to eliminate the friction between thinking and recording ideas, so we built something we’d genuinely use.
+For JAMHacks 6, my team and I built **Telenotes**, which is a mobile app that transforms spoken thoughts into organized notes using natural language processing. The idea stemmed from a simple question: _why do we forget most of our thoughts?_ We wanted to eliminate the friction between thinking and recording ideas, so we built something we'd genuinely use.
 Here's a demo video:
 <iframe 
   src="https://www.youtube.com/embed/04YeR4AuvsQ?si=W03E937OdBKoAqHY" 
@@ -78,7 +78,7 @@ Here's a demo video:
 
 I mainly focused on the frontend, which was my first time coding with JavaScript. This was before any LLMs were released, so learning and coding on the fly was a real challenge.
 
-Despite initial roadblocks with Google’s API, switching to IBM Watson led to quick and accurate results. This project deepened my understanding of NLP pipelines, mobile-backend communication, and the importance of designing around user accessibility.
+Despite initial roadblocks with Google's API, switching to IBM Watson led to quick and accurate results. This project deepened my understanding of NLP pipelines, mobile-backend communication, and the importance of designing around user accessibility.
 `,
     imageUrl: "/images/telenote.png",
     technologies: [
@@ -218,8 +218,20 @@ I implemented the AI functionalities, including the recipe scanning and image re
 As part of the Engineering Science curriculum, I took 3 physics courses: [PHY180](https://www.physics.utoronto.ca/undergraduate/current-and-prospective-students/undergraduate-courses/elements-of-physics-i/) (Classical Mechanics), [PHY293](https://www.physics.utoronto.ca/undergraduate/current-and-prospective-students/undergraduate-courses/waves-and-modern-physics/) (Waves & Modern Physics), and [PHY294](https://www.physics.utoronto.ca/undergraduate/current-and-prospective-students/undergraduate-courses/quantum-and-thermal-physics/) (Quantum & Thermal Physics). Here are various physics experiments I did in each course and my reports on them.
 
 ## PHY180
+# Pendulum - [Paper](https://drive.google.com/file/d/1jGUGThsQglmvLwHygEQlEFU2Qb0ysxXC/view?usp=sharing)
+
+For PHY180, I wrote a paper on the physics of a simple pendulum. I investigated the roughly parabolic correlation between a pendulum's drop angle and its period. I then analyzed how the pendulum's amplitude decays over time, which closely followed an exponential function when dropped from low enough angles. From this, I calculated the Quality Factor to quantify damping. Finally, I explored how changing the pendulum's length affects its motion, finding that while length doesn't significantly affect the Q factor, the period increases approximately with a power-law relationship.
+
+<img src="/images/pendulum.png" alt="Pendulum" className="rounded-lg border border-zinc-800" />
 
 ## PHY293
+
+# Charge-to-Mass Ratio for the Electron - [Paper](https://drive.google.com/file/d/17liCblhUc09byRuuL5MX6z-OtZGn4kN3/view?usp=sharing)
+
+The charge-to-mass ratio (e/m) of the electron is a fundamental property first measured by J. J. Thomson in 1895, highlighting the behavior of charged particles under electromagnetic forces. In this experiment, the motion of an electron in a uniform magnetic field is studied to determine its e/m ratio.
+
+<img src="/images/chargetomass1.png" alt="Charge-to-Mass Ratio for the Electron" className="rounded-lg border border-zinc-800" />
+<img src="/images/chargetomass2.png" alt="Charge-to-Mass Ratio for the Electron" className="rounded-lg border border-zinc-800" />
 
 ## PHY294
     `,

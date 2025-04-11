@@ -858,10 +858,6 @@ h1, h2, h3, h4, h5, h6 {
   animation: 2s cubic-bezier(.4, 0, .6, 1) infinite pulse;
 }
 
-.cursor-pointer {
-  cursor: pointer;
-}
-
 .touch-none {
   touch-action: none;
 }
@@ -1010,14 +1006,6 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: .75rem;
 }
 
-.rounded-none {
-  border-radius: 0;
-}
-
-.rounded {
-  border-radius: .25rem;
-}
-
 .border {
   border-width: 1px;
 }
@@ -1076,6 +1064,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .border-t-transparent {
   border-top-color: #0000;
+}
+
+.bg-\[\#C1C1C1\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(193 193 193 / var(--tw-bg-opacity, 1));
 }
 
 .bg-amber-900\/20 {
@@ -1155,10 +1148,6 @@ h1, h2, h3, h4, h5, h6 {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-zinc-600\/50 {
-  background-color: #52525b80;
 }
 
 .bg-zinc-800 {
@@ -1578,10 +1567,6 @@ h1, h2, h3, h4, h5, h6 {
   transition-duration: .15s;
 }
 
-.duration-150 {
-  transition-duration: .15s;
-}
-
 .duration-200 {
   transition-duration: .2s;
 }
@@ -1592,10 +1577,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-}
-
-.ease-out {
-  transition-timing-function: cubic-bezier(0, 0, .2, 1);
 }
 
 @keyframes enter {
@@ -1612,10 +1593,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.duration-150 {
-  animation-duration: .15s;
-}
-
 .duration-200 {
   animation-duration: .2s;
 }
@@ -1626,10 +1603,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .ease-in-out {
   animation-timing-function: cubic-bezier(.4, 0, .2, 1);
-}
-
-.ease-out {
-  animation-timing-function: cubic-bezier(0, 0, .2, 1);
 }
 
 ::-webkit-scrollbar {
@@ -1659,6 +1632,11 @@ h1, h2, h3, h4, h5, h6 {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:bg-\[\#7D7D7D\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(125 125 125 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-accent:hover {
@@ -1696,17 +1674,9 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgb(228 228 231 / var(--tw-bg-opacity, 1));
 }
 
-.hover\:bg-zinc-500\/50:hover {
-  background-color: #71717a80;
-}
-
 .hover\:bg-zinc-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(63 63 70 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-zinc-800\/40:hover {
-  background-color: #27272a66;
 }
 
 .hover\:bg-zinc-900\/70:hover {
@@ -1973,10 +1943,6 @@ h1, h2, h3, h4, h5, h6 {
 .\[\&_button\>svg\]\:text-white button > svg {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.\[\&_button\[data-state\=open\]\]\:bg-transparent button[data-state="open"] {
-  background-color: #0000;
 }
 
 .\[\&_svg\]\:pointer-events-none svg {

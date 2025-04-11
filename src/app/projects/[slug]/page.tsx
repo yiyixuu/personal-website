@@ -3,6 +3,7 @@ import { MainNav } from "@/components/nav/MainNav";
 import { Footer } from "@/components/footer/Footer";
 import { ProjectDetail } from "./ProjectDetail";
 import { notFound } from "next/navigation";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 export const dynamic = "force-static";
 
@@ -40,18 +41,20 @@ export default async function ProjectPage(props: Props) {
 
   const project = projectData[slug as ProjectSlug];
   return (
-    <>
+    <div className="h-screen flex flex-col">
       <MainNav />
-      <main className="min-h-screen bg-black pt-16 pb-20">
-        <ProjectDetail project={{
-          ...project,
-          collaborators: project.collaborators?.map(c => ({
-            name: c.name,
-            link: c.link || '' // Ensure link is always a string
-          }))
-        }} />
-      </main>
-      <Footer />
-    </>
+      <ScrollArea className="flex-1">
+        <main className="bg-black pt-16 pb-20">
+          <ProjectDetail project={{
+            ...project,
+            collaborators: project.collaborators?.map(c => ({
+              name: c.name,
+              link: c.link || '' // Ensure link is always a string
+            }))
+          }} />
+          <Footer />
+        </main>
+      </ScrollArea>
+    </div>
   );
 }

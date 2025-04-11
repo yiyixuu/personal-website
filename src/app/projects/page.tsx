@@ -18,9 +18,9 @@ const allProjects = Object.entries(projectData).map(([slug, data]) => ({
 
 export default function ProjectsPage() {
   return (
-    <>
+    <div className="h-screen flex flex-col">
       <MainNav />
-      <ScrollArea className="min-h-screen">
+      <ScrollArea className="flex-1">
         <main className="bg-black pt-16 pb-20">
           <div className="container mx-auto px-4">
             <motion.div
@@ -81,9 +81,9 @@ export default function ProjectsPage() {
               </div>
             </motion.div>
           </div>
+          <Footer />
         </main>
       </ScrollArea>
-      <Footer />
-    </>
+    </div>
   );
 } 
