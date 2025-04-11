@@ -2,8 +2,12 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { TypingAnimation } from "@/components/animations/TypingAnimation";
+import { Download } from "lucide-react";
 
 export function AboutSection() {
+  const nameSequence = ["Yiyi Xu", "徐义一"];
+
   return (
     <section className="py-20 bg-zinc-950">
       <div className="container mx-auto px-4">
@@ -39,11 +43,13 @@ export function AboutSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="text-3xl font-bold text-white mb-6">Hey, I'm <span className="text-blue-400">Yiyi Xu</span> 👋</h3>
+            <h3 className="text-3xl font-bold text-white mb-6">
+              Hey, I'm <span className="text-blue-400"><TypingAnimation words={nameSequence} /></span> 👋
+            </h3>
 
             <div className="space-y-4 text-zinc-300">
               <p>
-                I'm currently a student at the University of Toronto, pursuing a Bachelor of Applied Science in <a href="https://engsci.utoronto.ca/program/what-is-engsci/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">Engineering Science</a>. I'm pursuing a major in Robotics Engineering and a minor in Artificial Intelligence.
+                I'm currently a student at the University of Toronto, pursuing a Bachelor of Applied Science in <a href="https://engsci.utoronto.ca/program/what-is-engsci/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">Engineering Science</a>. I'm majoring in Robotics Engineering and minoring in Artificial Intelligence.
               </p>
 
               <p>
@@ -75,8 +81,18 @@ export function AboutSection() {
                   <li>MS Office Suite (PowerPoint, Excel, Word)</li>
                 </ul>
               </div>
+            </div>
 
-              
+            <div className="mt-8 flex justify-center">
+              <a
+                href="/Yiyi_Xu_resume.pdf"
+                download="Yiyi_Xu_resume.pdf"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-full 
+                  hover:bg-blue-700 transition-colors"
+              >
+                <Download className="h-4 w-4" />
+                Download Resume
+              </a>
             </div>
           </motion.div>
         </div>

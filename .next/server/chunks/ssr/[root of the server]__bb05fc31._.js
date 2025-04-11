@@ -494,9 +494,9 @@ function getProjectUrl(slug) {
 const projectData = {
     "matboard-beam-bridge": {
         title: "Matboard Beam Bridge",
-        description: "1200mm long bridge made from 1 piece of matboard",
+        description: "1200mm long bridge made from 1 piece of matboard.",
         fullDescription: `
-For the [CIV102](https://orientation.engsci.utoronto.ca/civ102-structures-and-materials/) course project, my team and I designed and constructed a 1200mm long bridge using only a single piece of matboard and contact cement.
+For the [CIV102](https://orientation.engsci.utoronto.ca/civ102-structures-and-materials/) course project, my team and I designed and constructed a 1200mm long bridge using only a single piece of matboard and contact cement. Here it is in action:
 
 <iframe 
   src="https://www.youtube.com/embed/KxGPTM63LrI" 
@@ -544,81 +544,211 @@ Below are the detailed structural calculations used to optimize our bridge desig
         color: "bg-indigo-950",
         featured: true
     },
-    "project-two": {
-        title: "Project Two",
-        description: "Pushing design boundaries with innovation.",
-        fullDescription: "A detailed description of Project Two. Explain the project's background, your approach, and the final results.",
-        imageUrl: "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1974&auto=format&fit=crop",
+    "telenote": {
+        title: "Telenote",
+        description: "Search history for your brain.",
+        fullDescription: `## Telenotes – Voice to Thought Pipeline
+
+For JAMHacks 6, my team and I built **Telenotes**, which is a mobile app that transforms spoken thoughts into organized notes using natural language processing. The idea stemmed from a simple question: _why do we forget most of our thoughts?_ We wanted to eliminate the friction between thinking and recording ideas, so we built something we’d genuinely use.
+Here's a demo video:
+<iframe 
+  src="https://www.youtube.com/embed/04YeR4AuvsQ?si=W03E937OdBKoAqHY" 
+  title="Telenotes Demo Video"
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+></iframe>
+
+**Telenote:**
+- Converts speech to structured notes using IBM Watson NLP
+- Supports command-based classification for rapid thought sorting
+- Built with React Native (frontend) and Express.js (backend)
+
+I mainly focused on the frontend, which was my first time coding with JavaScript. This was before any LLMs were released, so learning and coding on the fly was a real challenge.
+
+Despite initial roadblocks with Google’s API, switching to IBM Watson led to quick and accurate results. This project deepened my understanding of NLP pipelines, mobile-backend communication, and the importance of designing around user accessibility.
+`,
+        imageUrl: "/images/telenote.png",
         technologies: [
-            "Python",
-            "TensorFlow",
-            "OpenCV"
+            "React Native",
+            "Node.js",
+            "IBM Watson",
+            "Express.js",
+            "Expo Go"
         ],
-        role: "Machine Learning Engineer",
+        role: "Front End Developer",
         collaborators: [
             {
-                name: "Tiago Ferreira",
-                link: "https://www.linkedin.com/in/tiago-ferreira-59a664251/"
+                name: "Adam Omarali",
+                link: "https://www.adamomarali.com/"
             },
             {
-                name: "Amely Vorontsov",
-                link: "https://www.linkedin.com/in/amelyvorontsov/"
+                name: "Leo Liu",
+                link: "https://leohliu.com/"
+            },
+            {
+                name: "Kody Neldner",
+                link: "https://www.linkedin.com/in/kody-neldner/?originalSubdomain=ca"
             }
         ],
-        link: "https://github.com/yourusername/project-two",
-        linkText: "View Repository",
+        link: "https://devpost.com/software/telenotes",
+        linkText: "View Devpost Submission",
         color: "bg-zinc-900",
         featured: true
     },
-    "project-three": {
-        title: "Project Three",
-        description: "Seamless user experiences through code.",
-        imageUrl: "https://images.unsplash.com/photo-1481487196290-c152efe083f5?q=80&w=962&auto=format&fit=crop",
-        fullDescription: "A detailed description of Project Three. Share the development process and key features.",
+    "bridge": {
+        title: "BRIDGE",
+        description: "Voice assistant framework for developers.",
+        imageUrl: "/images/bridge.png",
+        fullDescription: `
+BRIDGE was a hackathon project for Hack the Valley 7. It's a framework to allow developers to integrate custom voice commands into their apps—no native support from Siri, Google Assistant, or Alexa needed.
+
+With BRIDGE, you can define how voice input should interact with your application, making smart assistant-level functionality accessible to the 99.9% of apps that don't have it.
+
+Check out my teammate [Adam](https://www.adamomarali.com/)'s video demoing the hack!
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-WAq_vkbNWE?si=G-jmxtFK5we9iT5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+BRIDGE is a continuation of sorts of the [Telenote](/projects/telenote) project, borrowing the voice input and classification technology.
+
+    `,
         technologies: [
-            "React Native",
-            "Firebase",
-            "Node.js"
+            "React",
+            "Node.js",
+            "IBM Watson",
+            "Cohere",
+            "Notion"
         ],
         role: "Full Stack Developer",
         collaborators: [
             {
-                name: "Tiago Ferreira",
-                link: "https://www.linkedin.com/in/tiago-ferreira-59a664251/"
+                name: "Adam Omarali",
+                link: "https://www.adamomarali.com/"
             },
             {
-                name: "Amely Vorontsov",
-                link: "https://www.linkedin.com/in/amelyvorontsov/"
+                name: "Navid Farkhondehpay"
+            },
+            {
+                name: "Victor Kondoh",
+                link: "https://www.linkedin.com/in/victor-junior-kondoh-a5a814166/"
             }
         ],
-        link: "https://github.com/yourusername/project-three",
-        linkText: "View Repository",
+        link: "https://devpost.com/software/bridge-u0l4x7",
+        linkText: "View Devpost Submission",
         color: "bg-blue-950",
         featured: true
     },
-    "project-four": {
-        title: "Project Four",
-        description: "Innovative solutions for modern problems.",
-        imageUrl: "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?q=80&w=1974&auto=format&fit=crop",
-        fullDescription: "A detailed description of Project Four. Discuss the challenges and solutions implemented.",
+    "waldio": {
+        title: "Wald.io",
+        description: "Competitive online multiplayer Where's Waldo?",
+        imageUrl: "/images/waldio.jpg",
+        fullDescription: `
+What if you could play Where's Waldo with your friends online, and every map was custom generated by AI? This was our project for Michigan Hacks 16.
+
+Our inspiration was online games like Scribbl.io and Gartic Phone, but with a Where's Waldo twist. Additionally, before each match, players can input custom themes and DALL·E will generate a custom background image in the style of Where's Waldo and randomly insert Waldo somewhere on the map. First person to find him wins!
+`,
         technologies: [
-            "Vue.js",
-            "Django",
-            "PostgreSQL"
+            "React",
+            "Express.js",
+            "Firebase",
+            "JavaScript",
+            "Node.js",
+            "Socket.io",
+            "DALL·E"
         ],
-        role: "Backend Developer",
+        role: "Front End & AI Developer",
         collaborators: [
             {
-                name: "Tiago Ferreira",
-                link: "https://www.linkedin.com/in/tiago-ferreira-59a664251/"
+                name: "Adam Omarali",
+                link: "https://www.adamomarali.com/"
             },
             {
-                name: "Amely Vorontsov",
-                link: "https://www.linkedin.com/in/amelyvorontsov/"
+                name: "Leo Liu",
+                link: "https://leohliu.com/"
+            },
+            {
+                name: "Stanley Liu",
+                link: "https://www.linkedin.com/in/stanley-liu-44798a237/"
             }
         ],
-        link: "https://github.com/yourusername/project-four",
+        link: "https://devpost.com/software/wald-io",
+        linkText: "View Devpost Submission",
+        color: "bg-gray-900",
+        featured: true
+    },
+    "freshify": {
+        title: "Freshify",
+        description: "Mobile push notifications for your expiring groceries.",
+        imageUrl: "/images/Freshify.png",
+        fullDescription: `
+Freshify is a mobile app that uses push notifications to remind you when your groceries are about to expire.
+
+Every time you come back from the grocery store, simply snap a photo of your receipt and take a photo of the items, and Freshify will (using GPT-4o's image recognition) automatically detect the items' expiration date and notify you when they're about to expire.
+
+Freshify also comes with a recipe generator, prioritizing ingredients that are about to expire.
+
+Here's a demo video!
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MwFF6PgIQ4w?si=0Bs66-xstlYVwl4t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+I implemented the AI functionalities, including the recipe scanning and image recognition.
+    `,
+        technologies: [
+            "Expo Go",
+            "FastAPI",
+            "OpenAI",
+            "TypeScript",
+            "Supabase",
+            "React Native"
+        ],
+        role: "AI Developer",
+        collaborators: [
+            {
+                name: "Adam Omarali",
+                link: "https://www.adamomarali.com/"
+            },
+            {
+                name: "Daniel Li",
+                link: "https://www.linkedin.com/in/daniel-hongyi-li/"
+            },
+            {
+                name: "Sami Khdair",
+                link: "https://www.linkedin.com/in/sami-khdair/"
+            }
+        ],
+        link: "https://github.com/yiyixuu/freshify",
         linkText: "View Repository",
+        color: "bg-gray-900",
+        featured: true
+    },
+    "physics-experiments": {
+        title: "Various Physics Experiments",
+        description: "from PHY180, PHY293, PHY294",
+        imageUrl: "/images/physics.jpg",
+        fullDescription: `
+As part of the Engineering Science curriculum, I took 3 physics courses: [PHY180](https://www.physics.utoronto.ca/undergraduate/current-and-prospective-students/undergraduate-courses/elements-of-physics-i/) (Classical Mechanics), [PHY293](https://www.physics.utoronto.ca/undergraduate/current-and-prospective-students/undergraduate-courses/waves-and-modern-physics/) (Waves & Modern Physics), and [PHY294](https://www.physics.utoronto.ca/undergraduate/current-and-prospective-students/undergraduate-courses/quantum-and-thermal-physics/) (Quantum & Thermal Physics). Here are various physics experiments I did in each course and my reports on them.
+
+## PHY180
+
+## PHY293
+
+## PHY294
+    `,
+        technologies: [
+            "Python",
+            "LabView",
+            "LaTeX"
+        ],
+        role: "Physicist",
+        collaborators: [
+            {
+                name: "Aryan Nehete",
+                link: "https://www.linkedin.com/in/aryan-nehete/?originalSubdomain=ca"
+            },
+            {
+                name: "Chase Graci",
+                link: "https://www.linkedin.com/in/chase-graci-5a7099232/"
+            }
+        ],
+        link: "https://drive.google.com/drive/folders/12BJBw85iZWYwT6ixSqrp3DInpyKq-hcu?usp=sharing",
+        linkText: "View All Reports",
         color: "bg-gray-900",
         featured: true
     }
@@ -1407,7 +1537,7 @@ function ProjectDetail({ project }) {
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "flex flex-wrap gap-2 mt-1",
-                                                                    children: project.collaborators.map((collaborator)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                    children: project.collaborators.map((collaborator)=>collaborator.link ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                                             href: collaborator.link,
                                                                             target: "_blank",
                                                                             rel: "noopener noreferrer",
@@ -1415,8 +1545,15 @@ function ProjectDetail({ project }) {
                                                                             children: collaborator.name
                                                                         }, collaborator.name, false, {
                                                                             fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                                                            lineNumber: 127,
-                                                                            columnNumber: 29
+                                                                            lineNumber: 128,
+                                                                            columnNumber: 31
+                                                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "px-3 py-1 bg-black/30 rounded-full text-sm text-white",
+                                                                            children: collaborator.name
+                                                                        }, collaborator.name, false, {
+                                                                            fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
+                                                                            lineNumber: 140,
+                                                                            columnNumber: 31
                                                                         }, this))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
@@ -1436,7 +1573,7 @@ function ProjectDetail({ project }) {
                                                                     children: "Technologies"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                                                    lineNumber: 143,
+                                                                    lineNumber: 152,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1446,18 +1583,18 @@ function ProjectDetail({ project }) {
                                                                             children: tech
                                                                         }, tech, false, {
                                                                             fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                                                            lineNumber: 146,
+                                                                            lineNumber: 155,
                                                                             columnNumber: 27
                                                                         }, this))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                                                    lineNumber: 144,
+                                                                    lineNumber: 153,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                                            lineNumber: 142,
+                                                            lineNumber: 151,
                                                             columnNumber: 21
                                                         }, this),
                                                         project.link && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1467,7 +1604,7 @@ function ProjectDetail({ project }) {
                                                                     children: "Project Link"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                                                    lineNumber: 157,
+                                                                    lineNumber: 166,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1481,19 +1618,19 @@ function ProjectDetail({ project }) {
                                                                             className: "ml-2 h-4 w-4"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                                                            lineNumber: 165,
+                                                                            lineNumber: 174,
                                                                             columnNumber: 27
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                                                    lineNumber: 158,
+                                                                    lineNumber: 167,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/projects/[slug]/ProjectDetail.tsx",
-                                                            lineNumber: 156,
+                                                            lineNumber: 165,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]

@@ -124,17 +124,26 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
                         <h4 className="text-sm font-medium text-zinc-400">Collaborators</h4>
                         <div className="flex flex-wrap gap-2 mt-1">
                           {project.collaborators.map((collaborator) => (
-                            <a
-                              key={collaborator.name}
-                              href={collaborator.link}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="px-3 py-1 bg-black/30 rounded-full text-sm text-blue-400 
-                                hover:text-white hover:bg-blue-600 hover:scale-105 
-                                transition-all duration-200 underline underline-offset-2"
-                            >
-                              {collaborator.name}
-                            </a>
+                            collaborator.link ? (
+                              <a
+                                key={collaborator.name}
+                                href={collaborator.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="px-3 py-1 bg-black/30 rounded-full text-sm text-blue-400 
+                                  hover:text-white hover:bg-blue-600 hover:scale-105 
+                                  transition-all duration-200 underline underline-offset-2"
+                              >
+                                {collaborator.name}
+                              </a>
+                            ) : (
+                              <span
+                                key={collaborator.name}
+                                className="px-3 py-1 bg-black/30 rounded-full text-sm text-white"
+                              >
+                                {collaborator.name}
+                              </span>
+                            )
                           ))}
                         </div>
                       </div>

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Mail, Phone, MapPin } from "lucide-react";
+import emailjs from '@emailjs/browser';
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -11,18 +12,39 @@ export function ContactSection() {
     email: "",
     message: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(formData);
-    // Handle form submission logic here
-    alert("Thanks for your message! I'll get back to you soon.");
-    setFormData({ name: "", email: "", message: "" });
+    setIsSubmitting(true);
+
+    try {
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          to_name: 'Yiyi Xu',
+          to_email: 'xuyiyi0516@gmail.com',
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      );
+
+      alert("Message sent successfully!");
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert("Failed to send message. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -99,9 +121,10 @@ export function ContactSection() {
 
               <Button
                 type="submit"
-                className="w-full bg-white text-black hover:bg-zinc-200 rounded-full py-6"
+                disabled={isSubmitting}
+                className="w-full bg-white text-black hover:bg-zinc-200 rounded-full py-6 disabled:opacity-50"
               >
-                Send Message <ChevronRight className="ml-1 h-4 w-4" />
+                {isSubmitting ? "Sending..." : "Send Message"} <ChevronRight className="ml-1 h-4 w-4" />
               </Button>
             </form>
           </motion.div>
