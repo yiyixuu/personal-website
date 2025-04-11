@@ -500,122 +500,66 @@ function getProjectUrl(slug) {
     return `/projects/${slug}`;
 }
 const projectData = {
-    "matboard-beam-bridge": {
-        title: "Matboard Beam Bridge",
-        description: "1200mm long bridge made from 1 piece of matboard",
+    freshify: {
+        title: "Freshify",
+        description: "Mobile push notifications for your expiring groceries",
+        imageUrl: "/images/Freshify.png",
         fullDescription: `
-For the [CIV102](https://orientation.engsci.utoronto.ca/civ102-structures-and-materials/) course project, my team and I designed and constructed a 1200mm long bridge using only a single piece of matboard and contact cement. Here it is in action:
-
-<iframe 
-  src="https://www.youtube.com/embed/KxGPTM63LrI" 
-  title="Bridge Testing Video"
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-></iframe>
-
-Our bridge:
-- Supported a peak moving load of **840 N** (over 180 lbs!!)
-- Tied for **first place** in our section based on peak load capacity
-- Achieved **third place** overall in the cohort for power-to-weight ratio efficiency
-
-I led the cross-sectional design process, which involved:
-- Performing extensive structural calculations
-- Iterating through multiple design variations
-- Optimizing performance through analytical modeling
-
-Initially attempting to use MATLAB and Python for calculations, I pivoted to Google Sheets for efficiency, which proved effective for our analytical needs. The project showcased practical applications of structural engineering principles and the importance of iterative design optimization.
-
-Below are the detailed structural calculations used to optimize our bridge design, including parameters for each section, stress analysis, and safety factors:
-
-<img src="/images/bridge-calculations.png" alt="Bridge structural calculations spreadsheet showing section parameters, stress analysis, and safety factors" className="rounded-lg border border-zinc-800" />
-      `,
-        imageUrl: "/images/bridge-group.png",
+  Freshify is a mobile app that uses push notifications to remind you when your groceries are about to expire.
+  
+  Every time you come back from the grocery store, simply snap a photo of your receipt and take a photo of the items, and Freshify will (using GPT-4o's image recognition) automatically detect the items' expiration date and notify you when they're about to expire.
+  
+  Freshify also comes with a recipe generator, prioritizing ingredients that are about to expire.
+  
+  Here's a demo video!
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/MwFF6PgIQ4w?si=0Bs66-xstlYVwl4t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  
+  I implemented the AI backend, the scanning functionalities, including the recipe scanning and image recognition. It was my first time using the OpenAI API, and I was amazed at how well it was able to recognize the items in the image.
+  
+  View the demo slides [here](https://drive.google.com/file/d/1hh-hWOotCuAQX6DQEiKh8IpNze2cUx6o/view?usp=sharing).
+    `,
         technologies: [
-            "Fusion360",
-            "Structural Analysis",
-            "Civil Engineering Calculations",
-            "Google Sheets"
+            "Expo Go",
+            "FastAPI",
+            "OpenAI",
+            "TypeScript",
+            "Supabase",
+            "React Native"
         ],
-        role: "Civil Engineer",
-        collaborators: [
-            {
-                name: "Tiago Ferreira",
-                link: "https://www.linkedin.com/in/tiago-ferreira-59a664251/"
-            },
-            {
-                name: "Amely Vorontsov",
-                link: "https://www.linkedin.com/in/amelyvorontsov/"
-            }
-        ],
-        link: "https://drive.google.com/file/d/1xIALROID6iFDgDUVxBSVGb0973t5O4ST/view?usp=sharing",
-        linkText: "View Project Report",
-        color: "bg-indigo-950",
-        featured: false
-    },
-    "telenote": {
-        title: "Telenote",
-        description: "Search history for your brain",
-        fullDescription: `
-For JAMHacks 6, my team and I built **Telenotes**, which is a mobile app that transforms spoken thoughts into organized notes using natural language processing. The idea stemmed from a simple question: _why do we forget most of our thoughts?_ We wanted to eliminate the friction between thinking and recording ideas, so we built something we'd genuinely use.
-Here's a demo video:
-<iframe 
-  src="https://www.youtube.com/embed/04YeR4AuvsQ?si=W03E937OdBKoAqHY" 
-  title="Telenotes Demo Video"
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-></iframe>
-
-**Telenote:**
-- Converts speech to structured notes using IBM Watson NLP
-- Supports command-based classification for rapid thought sorting
-- Built with React Native (frontend) and Express.js (backend)
-
-I mainly focused on the frontend, which was my first time coding with JavaScript. This was before any LLMs were released, so learning and coding on the fly was a real challenge.
-
-Despite initial roadblocks with Google's API, switching to IBM Watson led to quick and accurate results. This project deepened my understanding of NLP pipelines, mobile-backend communication, and the importance of designing around user accessibility.
-`,
-        imageUrl: "/images/telenote.png",
-        technologies: [
-            "React Native",
-            "Node.js",
-            "IBM Watson",
-            "Express.js",
-            "Expo Go"
-        ],
-        role: "Front End Developer",
+        role: "AI Developer",
         collaborators: [
             {
                 name: "Adam Omarali",
                 link: "https://www.adamomarali.com/"
             },
             {
-                name: "Leo Liu",
-                link: "https://leohliu.com/"
+                name: "Daniel Li",
+                link: "https://www.linkedin.com/in/daniel-hongyi-li/"
             },
             {
-                name: "Kody Neldner",
-                link: "https://www.linkedin.com/in/kody-neldner/?originalSubdomain=ca"
+                name: "Sami Khdair",
+                link: "https://www.linkedin.com/in/sami-khdair/"
             }
         ],
-        link: "https://devpost.com/software/telenotes",
-        linkText: "View Devpost Submission",
-        color: "bg-zinc-900",
-        featured: false
+        link: "https://github.com/yiyixuu/freshify",
+        linkText: "View Repository",
+        color: "bg-gray-900",
+        featured: true
     },
-    "bridge": {
+    bridge: {
         title: "BRIDGE",
         description: "Voice assistant framework for developers",
         imageUrl: "/images/bridge.png",
         fullDescription: `
-BRIDGE was a hackathon project for Hack the Valley 7. It's a framework to allow developers to integrate custom voice commands into their apps—no native support from Siri, Google Assistant, or Alexa needed.
-
-With BRIDGE, you can define how voice input should interact with your application, making smart assistant-level functionality accessible to the 99.9% of apps that don't have it.
-
-Check out my teammate [Adam](https://www.adamomarali.com/)'s video demoing the hack!
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-WAq_vkbNWE?si=G-jmxtFK5we9iT5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-BRIDGE is a continuation of sorts of the [Telenote](/projects/telenote) project, borrowing the voice input and classification technology.
-
+  BRIDGE was a hackathon project for Hack the Valley 7. It's a framework to allow developers to integrate custom voice commands into their apps—no native support from Siri, Google Assistant, or Alexa needed.
+  
+  With BRIDGE, you can define how voice input should interact with your application, making smart assistant-level functionality accessible to the 99.9% of apps that don't have it.
+  
+  Check out my teammate [Adam](https://www.adamomarali.com/)'s video demoing the hack!
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/-WAq_vkbNWE?si=G-jmxtFK5we9iT5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  
+  BRIDGE is a continuation of sorts of the [Telenote](/projects/telenote) project, borrowing the voice input and classification technology.
+  
     `,
         technologies: [
             "React",
@@ -643,25 +587,33 @@ BRIDGE is a continuation of sorts of the [Telenote](/projects/telenote) project,
         color: "bg-blue-950",
         featured: true
     },
-    "waldio": {
-        title: "Wald.io",
-        description: "Competitive online multiplayer Where's Waldo?",
-        imageUrl: "/images/waldio.jpg",
+    bdc: {
+        title: "Housing Proximity to Amenities in the US",
+        description: "Paper on how city design affects demographics and educational performance",
+        imageUrl: "/images/bdc.jpeg",
         fullDescription: `
-What if you could play Where's Waldo with your friends online, and every map was custom generated by AI? This was our project for Michigan Hacks 16.
+(picture unrelated, I just love Shanghai)
 
-Our inspiration was online games like Scribbl.io and Gartic Phone, but with a Where's Waldo twist. Additionally, before each match, players can input custom themes and DALL·E will generate a custom background image in the style of Where's Waldo and randomly insert Waldo somewhere on the map. First person to find him wins!
+For Stem Fellowship's Big Data Challenge, my team and I analyzed proximity to ammenities and demographic data for a given address in the US. We won 1st place out of 160 teamsand $1000!
+
+I led the data sampling part, where I used [OpenAddresses](https://openaddresses.io/) to simple random sampling 163 counties from 1,936 available and stratified random sampling 1,630 unique addresses. This enabled the analysis of housing proximity to amenities with educational attainment and demographic relationships.
+
+We then used the Geoapify API to get the distance to the nearest amenity, and used ArcGIS to get education and demographic data for analysis for each address sampled.
+
+Here's my teammate Adam explaining our project in detail:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SSu8a05wwQI?si=-2gAs3naStyXv3vf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+And here was our original pitch video:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Jfts_QFvZUg?si=D6PzSLp7S5HDt_fN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 `,
         technologies: [
-            "React",
-            "Express.js",
-            "Firebase",
-            "JavaScript",
-            "Node.js",
-            "Socket.io",
-            "DALL·E"
+            "Python",
+            "OpenAddresses",
+            "Geoapify",
+            "ArcGIS",
+            "LaTeX"
         ],
-        role: "Front End & AI Developer",
+        role: "Researcher",
         collaborators: [
             {
                 name: "Adam Omarali",
@@ -672,56 +624,14 @@ Our inspiration was online games like Scribbl.io and Gartic Phone, but with a Wh
                 link: "https://leohliu.com/"
             },
             {
-                name: "Stanley Liu",
-                link: "https://www.linkedin.com/in/stanley-liu-44798a237/"
-            }
-        ],
-        link: "https://devpost.com/software/wald-io",
-        linkText: "View Devpost Submission",
-        color: "bg-gray-900",
-        featured: false
-    },
-    "freshify": {
-        title: "Freshify",
-        description: "Mobile push notifications for your expiring groceries",
-        imageUrl: "/images/Freshify.png",
-        fullDescription: `
-Freshify is a mobile app that uses push notifications to remind you when your groceries are about to expire.
-
-Every time you come back from the grocery store, simply snap a photo of your receipt and take a photo of the items, and Freshify will (using GPT-4o's image recognition) automatically detect the items' expiration date and notify you when they're about to expire.
-
-Freshify also comes with a recipe generator, prioritizing ingredients that are about to expire.
-
-Here's a demo video!
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MwFF6PgIQ4w?si=0Bs66-xstlYVwl4t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-I implemented the AI functionalities, including the recipe scanning and image recognition.
-    `,
-        technologies: [
-            "Expo Go",
-            "FastAPI",
-            "OpenAI",
-            "TypeScript",
-            "Supabase",
-            "React Native"
-        ],
-        role: "AI Developer",
-        collaborators: [
-            {
-                name: "Adam Omarali",
-                link: "https://www.adamomarali.com/"
+                name: "Navid Farkhondehpay"
             },
             {
-                name: "Daniel Li",
-                link: "https://www.linkedin.com/in/daniel-hongyi-li/"
-            },
-            {
-                name: "Sami Khdair",
-                link: "https://www.linkedin.com/in/sami-khdair/"
+                name: "James Tian"
             }
         ],
-        link: "https://github.com/yiyixuu/freshify",
-        linkText: "View Repository",
+        link: "https://drive.google.com/file/d/1rdfhtmkyJPTMEQ5pbLwHt6uy8v3t5tiu/view",
+        linkText: "Read Paper Here",
         color: "bg-gray-900",
         featured: true
     },
@@ -794,6 +704,146 @@ This lab explored three core concepts in light polarization: Malus' Law, the eff
         linkText: "View All Reports",
         color: "bg-gray-900",
         featured: true
+    },
+    "matboard-beam-bridge": {
+        title: "Matboard Beam Bridge",
+        description: "1200mm long bridge made from 1 piece of matboard",
+        fullDescription: `
+For the [CIV102](https://orientation.engsci.utoronto.ca/civ102-structures-and-materials/) course project, my team and I designed and constructed a 1200mm long bridge using only a single piece of matboard and contact cement. Here it is in action:
+
+<iframe 
+  src="https://www.youtube.com/embed/KxGPTM63LrI" 
+  title="Bridge Testing Video"
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+></iframe>
+
+Our bridge:
+- Supported a peak moving load of **840 N** (over 180 lbs!!)
+- Tied for **first place** in our section based on peak load capacity
+- Achieved **third place** overall in the cohort for power-to-weight ratio efficiency
+
+I led the cross-sectional design process, which involved:
+- Performing extensive structural calculations
+- Iterating through multiple design variations
+- Optimizing performance through analytical modeling
+
+Initially attempting to use MATLAB and Python for calculations, I pivoted to Google Sheets for efficiency, which proved effective for our analytical needs. The project showcased practical applications of structural engineering principles and the importance of iterative design optimization.
+
+Below are the detailed structural calculations used to optimize our bridge design, including parameters for each section, stress analysis, and safety factors:
+
+<img src="/images/bridge-calculations.png" alt="Bridge structural calculations spreadsheet showing section parameters, stress analysis, and safety factors" className="rounded-lg border border-zinc-800" />
+      `,
+        imageUrl: "/images/bridge-group.png",
+        technologies: [
+            "Fusion360",
+            "Structural Analysis",
+            "Civil Engineering Calculations",
+            "Google Sheets"
+        ],
+        role: "Civil Engineer",
+        collaborators: [
+            {
+                name: "Tiago Ferreira",
+                link: "https://www.linkedin.com/in/tiago-ferreira-59a664251/"
+            },
+            {
+                name: "Amely Vorontsov",
+                link: "https://www.linkedin.com/in/amelyvorontsov/"
+            }
+        ],
+        link: "https://drive.google.com/file/d/1xIALROID6iFDgDUVxBSVGb0973t5O4ST/view?usp=sharing",
+        linkText: "View Project Report",
+        color: "bg-indigo-950",
+        featured: false
+    },
+    telenote: {
+        title: "Telenote",
+        description: "Search history for your brain",
+        fullDescription: `
+For JAMHacks 6, my team and I built **Telenotes**, which is a mobile app that transforms spoken thoughts into organized notes using natural language processing. The idea stemmed from a simple question: _why do we forget most of our thoughts?_ We wanted to eliminate the friction between thinking and recording ideas, so we built something we'd genuinely use.
+Here's a demo video:
+<iframe 
+  src="https://www.youtube.com/embed/04YeR4AuvsQ?si=W03E937OdBKoAqHY" 
+  title="Telenotes Demo Video"
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+></iframe>
+
+**Telenote:**
+- Converts speech to structured notes using IBM Watson NLP
+- Supports command-based classification for rapid thought sorting
+- Built with React Native (frontend) and Express.js (backend)
+
+I mainly focused on the frontend, which was my first time coding with JavaScript. This was before any LLMs were released, so learning and coding on the fly was a real challenge.
+
+Despite initial roadblocks with Google's API, switching to IBM Watson led to quick and accurate results. This project deepened my understanding of NLP pipelines, mobile-backend communication, and the importance of designing around user accessibility.
+`,
+        imageUrl: "/images/telenote.png",
+        technologies: [
+            "React Native",
+            "Node.js",
+            "IBM Watson",
+            "Express.js",
+            "Expo Go"
+        ],
+        role: "Front End Developer",
+        collaborators: [
+            {
+                name: "Adam Omarali",
+                link: "https://www.adamomarali.com/"
+            },
+            {
+                name: "Leo Liu",
+                link: "https://leohliu.com/"
+            },
+            {
+                name: "Kody Neldner",
+                link: "https://www.linkedin.com/in/kody-neldner/?originalSubdomain=ca"
+            }
+        ],
+        link: "https://devpost.com/software/telenotes",
+        linkText: "View Devpost Submission",
+        color: "bg-zinc-900",
+        featured: false
+    },
+    waldio: {
+        title: "Wald.io",
+        description: "Competitive online multiplayer Where's Waldo?",
+        imageUrl: "/images/waldio.jpg",
+        fullDescription: `
+What if you could play Where's Waldo with your friends online, and every map was custom generated by AI? This was our project for Michigan Hacks 16.
+
+Our inspiration was online games like Scribbl.io and Gartic Phone, but with a Where's Waldo twist. Additionally, before each match, players can input custom themes and DALL·E will generate a custom background image in the style of Where's Waldo and randomly insert Waldo somewhere on the map. First person to find him wins!
+`,
+        technologies: [
+            "React",
+            "Express.js",
+            "Firebase",
+            "JavaScript",
+            "Node.js",
+            "Socket.io",
+            "DALL·E"
+        ],
+        role: "Front End & AI Developer",
+        collaborators: [
+            {
+                name: "Adam Omarali",
+                link: "https://www.adamomarali.com/"
+            },
+            {
+                name: "Leo Liu",
+                link: "https://leohliu.com/"
+            },
+            {
+                name: "Stanley Liu",
+                link: "https://www.linkedin.com/in/stanley-liu-44798a237/"
+            }
+        ],
+        link: "https://devpost.com/software/wald-io",
+        linkText: "View Devpost Submission",
+        color: "bg-gray-900",
+        featured: false
     },
     "exam-cal": {
         title: "Exam Calendar Export Tool",
@@ -883,7 +933,7 @@ Here's my team winning second place! (I had to leave before the awards ceremony 
         color: "bg-gray-900",
         featured: false
     },
-    "qfc": {
+    qfc: {
         title: "Algorithmic Trading Case Competition",
         description: "Hosted by the Quant Finance Club",
         imageUrl: "/images/qfc.png",
@@ -919,54 +969,6 @@ We ranked 1st of out 14 teams by profit margins! (16% return on $100k)
         linkText: "View Slide Deck",
         color: "bg-gray-900",
         featured: false
-    },
-    "bdc": {
-        title: "Housing Proximity to Amenities in the US",
-        description: "Paper on how city design affects demographics and educational performance",
-        imageUrl: "/images/bdc.jpeg",
-        fullDescription: `
-(picture unrelated, I just love Shanghai)
-
-For Stem Fellowship's Big Data Challenge, my team and I analyzed proximity to ammenities and demographic data for a given address in the US. We won 1st place out of 160 teamsand $1000!
-
-I led the data sampling part, where I used [OpenAddresses](https://openaddresses.io/) to simple random sampling 163 counties from 1,936 available and stratified random sampling 1,630 unique addresses. This enabled the analysis of housing proximity to amenities with educational attainment and demographic relationships.
-
-We then used the Geoapify API to get the distance to the nearest amenity, and used ArcGIS to get education and demographic data for analysis for each address sampled.
-
-Here's my teammate Adam explaining our project in detail:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SSu8a05wwQI?si=-2gAs3naStyXv3vf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-And here was our original pitch video:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Jfts_QFvZUg?si=D6PzSLp7S5HDt_fN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-`,
-        technologies: [
-            "Python",
-            "OpenAddresses",
-            "Geoapify",
-            "ArcGIS",
-            "LaTeX"
-        ],
-        role: "Researcher",
-        collaborators: [
-            {
-                name: "Adam Omarali",
-                link: "https://www.adamomarali.com/"
-            },
-            {
-                name: "Leo Liu",
-                link: "https://leohliu.com/"
-            },
-            {
-                name: "Navid Farkhondehpay"
-            },
-            {
-                name: "James Tian"
-            }
-        ],
-        link: "https://drive.google.com/file/d/1rdfhtmkyJPTMEQ5pbLwHt6uy8v3t5tiu/view",
-        linkText: "Read Paper Here",
-        color: "bg-gray-900",
-        featured: true
     }
 };
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
