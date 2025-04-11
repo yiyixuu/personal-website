@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function ClientBody({
   children,
@@ -16,6 +17,7 @@ export default function ClientBody({
   return (
     <body className="antialiased" suppressHydrationWarning>
       {children}
+      <Analytics />
     </body>
   );
 }
