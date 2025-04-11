@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function ClientBody({
   children,
@@ -18,6 +19,7 @@ export default function ClientBody({
     <body className="antialiased" suppressHydrationWarning>
       {children}
       <Analytics />
+      <SpeedInsights />
     </body>
   );
 }
