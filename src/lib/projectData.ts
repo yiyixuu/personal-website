@@ -263,6 +263,43 @@ Below are the detailed structural calculations used to optimize our bridge desig
     color: "bg-indigo-950",
     featured: false,
   },
+  "integral-music": {
+    title: "Rap Music vs Solving Integrals",
+    description: "The effect of lyrical rap on speed and accuracy of solving integrals",
+    fullDescription: `
+I personally can never focus while listening to music, let alone rap music with lots of lyrics. However, many of my friends claim they study better with music, so I decided to put it to the test.
+
+For my Probability & Statistics (ECE286) course project, my team and I decided to investigate the effect of lyrical rap on speed and accuracy of solving integrals. 24 second-year Engineering Science students were assigned to complete a set oftwo Calculus II level integrals with or without the influence of rap music. 
+
+I conducted the data collection and analysis in R Studio. It was my first time using R, so I had to learn as I went along.
+
+Their solution times and accuracy were measured and results showed that the music group had a slightly lower mean score (6.8 vs 7.6 out of 10) and an equal mean time (about 8.5 minutes).
+
+<img src="/images/integral1.png" alt="Integral Music" className="rounded-lg border border-zinc-800" />
+<img src="/images/integral2.png" alt="Integral Music" className="rounded-lg border border-zinc-800" />
+`,
+    imageUrl: "/images/integral.png",
+    technologies: [
+      "Statistics",
+      "R Studio",
+      "LaTeX"
+    ],
+    role: "Data Analyst",
+    collaborators: [
+      {
+        name: "Roy Bou Abboud",
+        link: "https://www.linkedin.com/in/roybouabboud/",
+      },
+      {
+        name: "Chase Graci",
+        link: "https://www.linkedin.com/in/chase-graci-5a7099232/",
+      },
+    ],
+    link: "https://drive.google.com/file/d/1f9r30FSNV0ad8EKv83iAw3I9VhgCjZGf/view?usp=sharing",
+    linkText: "View Project Report",
+    color: "bg-indigo-950",
+    featured: false,
+  },
   telenote: {
     title: "Telenote",
     description: "Search history for your brain",
@@ -359,6 +396,8 @@ Our inspiration was online games like Scribbl.io and Gartic Phone, but with a Wh
 This is a project was inspired by [SWErikCodes'](https://www.linkedin.com/in/erik-cupsa/) [McGill Exam Scheduler](https://mcgillscheduler.vercel.app/).
 
 I personally always wanted to be able to import my exam schedule into my Google Calendar, but UofT doesn't offer an official API for this. So, I built this tool to scrape the exam schedule released by the Registrar and export it as an iCal file.
+
+Since I published this tool, it has had 150+ users!
 
 The site is coded with Python and hosted on Streamlit. Once the user selects their courses, the tool generates an iCal file complete with all the details of the exams, including the location (based on last name), time, and duration.
 
