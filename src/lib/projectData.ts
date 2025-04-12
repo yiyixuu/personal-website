@@ -501,4 +501,21 @@ We ranked 1st of out 14 teams by profit margins! (16% return on $100k)
     color: "bg-gray-900",
     featured: false,
   },
+  future: {
+    title: "Future Projects",
+    description: "Projects I have planned/am working on",
+    imageUrl: "/images/future.png",
+    fullDescription: `
+I'm always working on something new! Here are some of the things I'm working on:
+
+- [Habot](https://kyumlee.com/future/), led by [Kyum Lee](https://kyumlee.com/), a habit learning wheel based robot that can climb stairs
+  - I'm working as a mechanical engineer, designing the leg assembly that allows the stair climbing
+
+- Starting a [RIVAL Robotics Competition](https://www.rivalrobotics.co/) Team @ UofT
+`,
+    technologies: ["Fusion 360"],
+    role: "Engineer",
+    color: "bg-gray-900",
+    featured: false,
+  },
 };

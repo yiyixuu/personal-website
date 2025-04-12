@@ -13,14 +13,88 @@ export function ContactSection() {
     message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [emailError, setEmailError] = useState("");
+
+  const validateEmail = (email: string) => {
+    // Basic format check
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!emailRegex.test(email)) {
+      setEmailError("Please enter a valid email address");
+      return false;
+    }
+
+    // Additional validation rules
+    const [localPart, domain] = email.split('@');
+
+    // Check local part length (before @)
+    if (localPart.length < 3) {
+      setEmailError("Username part of email is too short");
+      return false;
+    }
+
+    // Check domain part
+    if (domain.length < 4) {
+      setEmailError("Domain name is too short");
+      return false;
+    }
+
+    // Check for common disposable email domains
+    const disposableDomains = ['temp.com', 'tempmail.com', 'throwaway.com'];
+    if (disposableDomains.some(d => domain.toLowerCase().includes(d))) {
+      setEmailError("Please use a non-disposable email address");
+      return false;
+    }
+
+    // Check for common invalid patterns
+    if (
+      localPart.startsWith('.') || 
+      localPart.endsWith('.') ||
+      localPart.includes('..') ||
+      domain.startsWith('.') || 
+      domain.endsWith('.') ||
+      domain.includes('..')
+    ) {
+      setEmailError("Invalid email format");
+      return false;
+    }
+
+    // Check for reasonable TLD length
+    const tld = domain.split('.').pop() || '';
+    if (tld.length < 2 || tld.length > 6) {
+      setEmailError("Invalid domain extension");
+      return false;
+    }
+
+    return true;
+  };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
+    
+    if (name === 'email') {
+      setEmailError("");
+    }
+  };
+
+  const handleBlur = (e: React.FocusEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    
+    if (name === 'email' && value) {
+      const trimmedEmail = value.trim().toLowerCase();
+      validateEmail(trimmedEmail);
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Trim the email before validation
+    const trimmedEmail = formData.email.trim().toLowerCase();
+    if (!validateEmail(trimmedEmail)) {
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
@@ -97,10 +171,14 @@ export function ContactSection() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
+                  onBlur={handleBlur}
                   required
-                  className="w-full px-4 py-3 bg-zinc-900/80 border border-zinc-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder:text-zinc-500 outline-none"
+                  className={`w-full px-4 py-3 bg-zinc-900/80 border ${emailError ? 'border-red-500' : 'border-zinc-700'} rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder:text-zinc-500 outline-none`}
                   placeholder="your.email@example.com"
                 />
+                {emailError && (
+                  <p className="mt-1 text-sm text-red-500">{emailError}</p>
+                )}
               </div>
 
               <div>
