@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { TypingAnimation } from "@/components/animations/TypingAnimation";
-import { Download } from "lucide-react";
+import { FileText } from "lucide-react";
 
 export function AboutSection() {
   const nameSequence = ["Yiyi Xu", "徐义一"];
@@ -49,11 +49,7 @@ export function AboutSection() {
 
             <div className="space-y-4 text-zinc-300">
               <p>
-                I'm currently a student at the University of Toronto, pursuing a Bachelor of Applied Science in <a href="https://engsci.utoronto.ca/program/what-is-engsci/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">Engineering Science</a>. I'm majoring in Robotics Engineering and minoring in Artificial Intelligence.
-              </p>
-
-              <p>
-                With experience in software development, 3D design, robotics, statistics, and consulting, I'm looking for opportunities to apply my board range of skills and learn more.
+                I'm currently a student at the University of Toronto, studying <a href="https://engsci.utoronto.ca/program/what-is-engsci/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">Engineering Science</a>. I'm majoring in Robotics Engineering and minoring in Artificial Intelligence.
               </p>
 
               <p>
@@ -85,13 +81,14 @@ export function AboutSection() {
 
             <div className="mt-8 flex justify-center">
               <a
-                href="/Yiyi_Xu_resume.pdf"
-                download="Yiyi_Xu_resume.pdf"
+                href="/resume"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-full 
                   hover:bg-blue-700 transition-colors"
               >
-                <Download className="h-4 w-4" />
-                Download Resume
+                <FileText className="h-4 w-4" />
+                View Resume
               </a>
             </div>
           </motion.div>

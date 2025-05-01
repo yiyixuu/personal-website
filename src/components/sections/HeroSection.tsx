@@ -10,15 +10,18 @@ export function HeroSection() {
   return (
     <section id="home" className="relative h-screen flex flex-col items-center justify-center bg-black text-white overflow-hidden pt-12">
       {/* Background image with gradient overlay */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-b from-zinc-900/70 to-black">
+      <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1635830625698-3b9bd74671ca?q=80&w=1932&auto=format&fit=crop"
+          // src="https://images.unsplash.com/photo-1635830625698-3b9bd74671ca?q=80&w=1932&auto=format&fit=crop"
+          src="/images/hero2.png"
           alt="Hero background"
           fill
           priority
           crossOrigin="anonymous"
-          className="mix-blend-overlay object-cover object-center"
+          className="object-cover object-center"
         />
+        <div className="absolute inset-0 bg-gradient-to-b from-zinc-900/40 to-black" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-transparent to-black/70" />
       </div>
 
       <div className="container relative z-10 mx-auto px-4 text-center">
