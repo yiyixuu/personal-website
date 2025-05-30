@@ -39,7 +39,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-2xl md:text-3xl font-medium text-zinc-300 mb-8"
         >
-          Engineering Science @ UofT
+          Robotics + AI @ University of Toronto
         </motion.h2>
 
         <motion.div
