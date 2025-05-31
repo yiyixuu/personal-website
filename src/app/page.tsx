@@ -13,7 +13,9 @@ export default function Home() {
       <MainNav />
       <ScrollArea className="flex-1">
         <main className="bg-black text-white">
-          <HeroSection />
+          <section id="hero" className="min-h-screen">
+            <HeroSection />
+          </section>
           <section id="about" className="min-h-screen">
             <AboutSection />
           </section>

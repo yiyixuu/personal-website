@@ -61,6 +61,7 @@ export function AboutSection() {
               <div>
                 <h4 className="text-xl font-bold text-white mb-3">Experiences</h4>
                 <ul className="space-y-2 text-zinc-400">
+                  <li>Software Engineer Intern @ Bosda</li>
                   <li>AI & Data Consulting Intern @ PwC</li>
                   <li>Head of Strategy & Robotics Software Engineer @ FRC Team 610</li>
                   <li>Project Lead @ St George Capital (Quant Finance Design Team)</li>
