@@ -47,6 +47,14 @@ export function AboutSection() {
               Hey, I'm <span className="text-blue-400"><TypingAnimation words={nameSequence} /></span> 👋
             </h3>
 
+            <div className="flex items-center gap-2 text-zinc-400 mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Toronto, ON
+            </div>
+
             <div className="space-y-4 text-zinc-300">
               <p>
                 I'm currently a student at the University of Toronto, studying <a href="https://engsci.utoronto.ca/program/what-is-engsci/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">Engineering Science</a>. I'm majoring in Robotics Engineering and minoring in Artificial Intelligence.

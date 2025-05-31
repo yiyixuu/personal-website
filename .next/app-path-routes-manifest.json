@@ -1,0 +1,8 @@
+{
+  "/robots.txt/route": "/robots.txt",
+  "/resume/page": "/resume",
+  "/page": "/",
+  "/projects/page": "/projects",
+  "/_not-found/page": "/_not-found",
+  "/projects/[slug]/page": "/projects/[slug]"
+}

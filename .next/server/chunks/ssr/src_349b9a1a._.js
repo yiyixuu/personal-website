@@ -257,7 +257,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 const navigationItems = [
     {
         name: "Home",
-        href: "/"
+        href: "/#hero"
     },
     {
         name: "About",

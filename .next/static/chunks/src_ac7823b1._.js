@@ -287,7 +287,7 @@ var _s = __turbopack_context__.k.signature();
 const navigationItems = [
     {
         name: "Home",
-        href: "/"
+        href: "/#hero"
     },
     {
         name: "About",
