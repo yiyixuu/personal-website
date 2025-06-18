@@ -229,16 +229,6 @@ export function ContactSection() {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="h-10 w-10 rounded-full bg-green-900/20 flex items-center justify-center text-green-500 mr-4">
-                    <Phone className="h-5 w-5" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-zinc-400">Phone</p>
-                    <p className="text-white">+1 (647) 918-5596</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
                   <div className="h-10 w-10 rounded-full bg-purple-900/20 flex items-center justify-center text-purple-500 mr-4">
                     <MapPin className="h-5 w-5" />
                   </div>
