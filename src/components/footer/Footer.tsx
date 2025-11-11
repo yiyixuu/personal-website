@@ -81,8 +81,14 @@ export function Footer() {
           <div>
             <h3 className="text-white text-sm font-medium mb-4">Contact</h3>
             <ul className="space-y-2 text-sm">
-              <li>xuyiyi0516@gmail.com</li>
-              <li>+1 (647) 918-5596</li>
+              <li>
+                <a
+                  href="mailto:xuyiyi0516@gmail.com"
+                  className="hover:text-white transition-colors"
+                >
+                  xuyiyi0516@gmail.com
+                </a>
+              </li>
               <li>Toronto, ON</li>
             </ul>
           </div>

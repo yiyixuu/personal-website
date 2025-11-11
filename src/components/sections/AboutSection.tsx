@@ -61,7 +61,7 @@ export function AboutSection() {
               </p>
 
               <p>
-                In my spare time, I like playing poker and volleyball, watching the NBA and F1, and recently I've been learning how to DJ.
+                In my spare time, I like playing poker and volleyball, watching the NBA and F1, and DJing.
               </p>
             </div>
 
@@ -69,10 +69,10 @@ export function AboutSection() {
               <div>
                 <h4 className="text-xl font-bold text-white mb-3">Experiences</h4>
                 <ul className="space-y-2 text-zinc-400">
+                  <li>Simulation Engineer @ aUToronto</li>
                   <li>Software Engineer Intern @ Bosda</li>
                   <li>AI & Data Consulting Intern @ PwC</li>
                   <li>Head of Strategy & Robotics Software Engineer @ FRC Team 610</li>
-                  <li>Project Lead @ St George Capital (Quant Finance Design Team)</li>
                   <li>8+ Years Programming Experience</li>
                 </ul>
               </div>
