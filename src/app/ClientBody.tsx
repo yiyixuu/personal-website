@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function ClientBody({
   children,
@@ -17,6 +18,7 @@ export default function ClientBody({
 
   return (
     <body className="antialiased" suppressHydrationWarning>
+      <ThemeToggle />
       {children}
       <Analytics />
       <SpeedInsights />

@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-shadcn",
+  "name": "personal-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,26 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.4.1",
-    "@radix-ui/react-dialog": "^1.1.6",
-    "@radix-ui/react-scroll-area": "^1.2.4",
-    "@radix-ui/react-slot": "^1.1.2",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
-    "framer-motion": "^12.6.0",
-    "lucide-react": "^0.475.0",
     "next": "15.5.18",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-markdown": "^10.1.0",
     "rehype-raw": "^7.0.0",
     "remark-gfm": "^4.0.1",
-    "sass": "^1.97.3",
-    "styled-components": "^6.1.17",
-    "tailwind-merge": "^3.0.1",
-    "tailwindcss-animate": "^1.0.7"
+    "sass": "^1.97.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

@@ -18,7 +18,94 @@ export function getProjectUrl(slug: ProjectSlug) {
   return `/projects/${slug}`;
 }
 
+// Display order, ranked by impressiveness (most impressive first).
+export const rankedSlugs: ProjectSlug[] = [
+  "bdc",
+  "volleyball-prediction",
+  "freshify",
+  "pong-robot",
+  "qfc",
+  "exam-cal",
+  "matboard-beam-bridge",
+  "bridge",
+  "telenote",
+  "ace-the-case",
+  "luminescent-vortex",
+  "integral-music",
+  "waldio",
+  "physics-experiments",
+  "future",
+];
+
 export const projectData: Record<string, Project> = {
+  "volleyball-prediction": {
+    title: "Volleyball Rally Outcome Prediction",
+    description:
+      "An LSTM that predicts who wins a volleyball rally from its play-by-play",
+    imageUrl: "",
+    fullDescription: `
+For my APS360 (Applied Fundamentals of Deep Learning) final project, I trained a model to predict which team wins a volleyball rally from the sequence of actions within it: serve, reception, set, attack, and block.
+
+Because a rally is inherently sequential (each contact constrains the next), I framed it as a sequence classification problem and built a two-layer LSTM with learned embeddings for each action type. I trained it on the [VREN](https://arxiv.org/abs/2209.13846) dataset of ~1,500 annotated rallies from professional and NCAA Division I games, with a feedforward network as a baseline to beat.
+
+The results:
+- The LSTM hit **90.7%** test accuracy and a **0.953** AUC, a 20-point jump over the MLP baseline (69.9%).
+- A team-swap data augmentation (mirroring team A and team B) was the single most impactful change, shrinking the train–validation gap from ~15 points to ~2 and fixing the overfitting that plagued my first version, all while using ~3× fewer parameters.
+
+To check that the model learned real volleyball patterns rather than memorizing the dataset, I hand-annotated 30 rallies from the 2025 NCAA Division I Men's Final (Long Beach State vs. UCLA), data the model had never seen. It held up at **80%** accuracy and a **0.891** AUC, which I was really happy with given the different teams, annotation style, and tiny sample.
+
+This was a solo project, and it was a great deep dive into sequence modeling, regularization in small-data regimes, and how much careful data work matters compared to raw model size.
+    `,
+    technologies: ["PyTorch", "Python", "LSTM", "Pandas", "NumPy"],
+    role: "Solo Project",
+    link: "https://github.com/yiyixuu/aps360-project",
+    linkText: "View Repository",
+    color: "bg-gray-900",
+    featured: true,
+  },
+  "pong-robot": {
+    title: "Autonomous Beer Pong Robot",
+    description:
+      "A turret that scans for cups with LiDAR and sinks them on its own",
+    imageUrl: "",
+    fullDescription: `
+For my MIE438 (Microprocessors and Embedded Microcomputer Systems) final project, my team and I built an autonomous cup pong robot: a turret that scans the table, finds the nearest cup, aims itself, and launches a ping pong ball into it with no human input.
+
+Here it is in action:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q0vxaehKVus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+We originally planned to find the cups with computer vision, but after some feedback we pivoted to a 1D LiDAR (TF-Luna) mounted on a rotating servo base. The robot sweeps across the table in 2° steps, logs the distance at each angle over I²C, and picks the angle with the smallest reading as the closest cup. It then slews the turret to that angle, spins up a pair of brushless flywheels to a fixed speed, and a feeder motor pushes the ball into the launcher. The whole sense–plan–act loop runs on a single ESP32, written in C++ with PlatformIO, and is structured as a Scan → Aim → Fire state machine.
+
+The end result:
+- **100%** cup detection rate
+- **±2°** angular accuracy
+- **200cm** maximum reliable shooting distance
+
+The hardest parts were all mechanical and electrical rather than software. Our custom ball bearing made the turret tilt, our DIY hall-effect RPM sensor couldn't survive the flywheel speeds, and faulty wiring killed our planned PID control loops, so we settled on fixed-speed shots instead. Even so, we ended up with a clean embedded system, coordinated entirely by one microcontroller, that reliably shoots ping pong balls into cups.
+
+The CAD was done in Onshape; the only part we didn't design ourselves was the ball feeder tube, adapted from [Tylr-J42's shooter](https://github.com/Tylr-J42/XRP-Ping-Pong-Ball-Shooter).
+    `,
+    technologies: ["ESP32", "C++", "PlatformIO", "Onshape", "LiDAR", "Python"],
+    role: "Embedded Systems Developer",
+    collaborators: [
+      {
+        name: "Roy Bou Abboud",
+        link: "https://www.linkedin.com/in/roybouabboud/",
+      },
+      {
+        name: "Abanoub Bashara",
+        link: "https://www.linkedin.com/in/abanoub-bashara/",
+      },
+      {
+        name: "Solomon Pius",
+        link: "https://www.linkedin.com/in/solomon-pius/",
+      },
+    ],
+    link: "https://github.com/yiyixuu/Pong-Robot",
+    linkText: "View Repository",
+    color: "bg-gray-900",
+    featured: true,
+  },
   freshify: {
     title: "Freshify",
     description: "Mobile push notifications for your expiring groceries",
