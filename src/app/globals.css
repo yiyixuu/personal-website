@@ -97,6 +97,97 @@ body {
   content: "→";
 }
 
+/* Experience rows: org · role · year.
+   Mobile stacks the role under the org; md+ splits into three columns.
+   The list owns the columns and rows inherit them via subgrid, so the
+   role and date columns stay aligned even when a date is missing. */
+.experience-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  row-gap: 0.75rem;
+}
+
+.experience-row {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: subgrid;
+  align-items: baseline;
+  column-gap: 1rem;
+  row-gap: 0.125rem;
+}
+
+.experience-org {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.experience-date {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.experience-role {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+@media (min-width: 768px) {
+  .experience-list {
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr) auto;
+    row-gap: 0.5rem;
+  }
+
+  .experience-row {
+    column-gap: 1.25rem;
+  }
+
+  .experience-role {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .experience-date {
+    grid-column: 3;
+  }
+}
+
+/* Organization name preceded by its favicon */
+.org-link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.org-mark {
+  flex: none;
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+  border-radius: 3px;
+  /* nudge the mark onto the text baseline */
+  transform: translateY(2px);
+}
+
+/* An org mark sitting inside a sentence. Kept on one line so the mark
+   can never be orphaned at a line break, away from the name it labels. */
+.inline-org {
+  white-space: nowrap;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* The UofT crest is a tall portrait lockup, so size it by height and let
+   the width follow — fitting it into a square box shrinks it to a sliver. */
+.inline-org-mark {
+  display: inline-block;
+  width: auto;
+  height: 1.35em;
+  margin-right: 0.32em;
+  vertical-align: -0.34em;
+}
+
 /* Small sans-serif section labels */
 .section-label {
   font-family: var(--font-inter), system-ui, sans-serif;

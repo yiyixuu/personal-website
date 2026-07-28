@@ -2,8 +2,16 @@ import Link from "next/link";
 import { projectData, getProjectUrl, rankedSlugs } from "@/lib/projectData";
 
 export const metadata = {
-  title: "Projects · Yiyi Xu",
+  // The root layout appends "· Yiyi Xu".
+  title: "Projects",
   description: "Things Yiyi Xu has built",
+  alternates: { canonical: "/projects/" },
+  openGraph: {
+    title: "Projects · Yiyi Xu",
+    description: "Things Yiyi Xu has built",
+    url: "/projects/",
+    type: "website",
+  },
 };
 
 export default function ProjectsPage() {

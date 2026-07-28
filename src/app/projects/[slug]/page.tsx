@@ -23,9 +23,28 @@ export async function generateMetadata(props: Props) {
   }
 
   const project = projectData[slug as ProjectSlug];
+  // Trailing slash to match `trailingSlash: true` in next.config.
+  const url = `/projects/${slug}/`;
+  // Fall back to the site card when a project has no image of its own.
+  const image = project.imageUrl || "/og.png";
+
   return {
     title: project.title,
     description: project.description,
+    alternates: { canonical: url },
+    openGraph: {
+      title: `${project.title} · Yiyi Xu`,
+      description: project.description,
+      url,
+      type: "article",
+      images: [{ url: image, alt: project.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.title} · Yiyi Xu`,
+      description: project.description,
+      images: [image],
+    },
   };
 }
 
