@@ -197,7 +197,7 @@ The CAD was done in Onshape; the only part we didn't design ourselves was the ba
     fullDescription: `
 (picture unrelated, I just love Shanghai)
 
-For Stem Fellowship's Big Data Challenge, my team and I analyzed proximity to ammenities and demographic data for a given address in the US. We won 1st place out of 160 teamsand $1000!
+For Stem Fellowship's Big Data Challenge, my team and I analyzed proximity to ammenities and demographic data for a given address in the US. We won 1st place out of 160 teams and $1000!
 
 I led the data sampling part, where I used [OpenAddresses](https://openaddresses.io/) to simple random sampling 163 counties from 1,936 available and stratified random sampling 1,630 unique addresses. This enabled the analysis of housing proximity to amenities with educational attainment and demographic relationships.
 
