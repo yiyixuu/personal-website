@@ -1,0 +1,2015 @@
+{
+  "term": "w25",
+  "label": "Winter 2025",
+  "lastPulled": "2025-02-26T16:49:59-05:00",
+  "exams": [
+    {
+      "course": "AER302H1S",
+      "courseTitle": "Aircraft Flight",
+      "date": "2025-04-17",
+      "time": "14:00:00",
+      "location": "BA-2185",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "AER310H1S",
+      "courseTitle": "Gasdynamics",
+      "date": "2025-04-24",
+      "time": "14:00:00",
+      "location": "BA-2139",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "AER336H1S",
+      "courseTitle": "Scientific Computing",
+      "date": "2025-04-14",
+      "time": "09:30:00",
+      "location": "BA-2175",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "AER372H1S",
+      "courseTitle": "Control Systems",
+      "date": "2025-04-22",
+      "time": "14:00:00",
+      "location": "SF-3202",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "AER373H1S",
+      "courseTitle": "Mechanics of Solids and Structures",
+      "date": "2025-04-26",
+      "time": "14:00:00",
+      "location": "BA-2159",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "AER503H1S",
+      "courseTitle": "Aeroelasticity",
+      "date": "2025-04-16",
+      "time": "14:00:00",
+      "location": "MY-360",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "AER510H1S",
+      "courseTitle": "Aerospace Propulsion",
+      "date": "2025-04-09",
+      "time": "14:00:00",
+      "location": "GB-303",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "APS105H1S",
+      "courseTitle": "Computer Fundamentals",
+      "date": "2025-04-15",
+      "time": "14:00:00",
+      "location": "GB-144",
+      "surnameRange": "A - CHAH"
+    },
+    {
+      "course": "APS105H1S",
+      "courseTitle": "Computer Fundamentals",
+      "date": "2025-04-15",
+      "time": "14:00:00",
+      "location": "GB-150",
+      "surnameRange": "CHAL - GEISS,D"
+    },
+    {
+      "course": "APS105H1S",
+      "courseTitle": "Computer Fundamentals",
+      "date": "2025-04-15",
+      "time": "14:00:00",
+      "location": "MY-030",
+      "surnameRange": "GEISS,M - KARA"
+    },
+    {
+      "course": "APS105H1S",
+      "courseTitle": "Computer Fundamentals",
+      "date": "2025-04-15",
+      "time": "14:00:00",
+      "location": "SF-1012",
+      "surnameRange": "KARD - MAD"
+    },
+    {
+      "course": "APS105H1S",
+      "courseTitle": "Computer Fundamentals",
+      "date": "2025-04-15",
+      "time": "14:00:00",
+      "location": "SF-1013",
+      "surnameRange": "MAG - ST"
+    },
+    {
+      "course": "APS105H1S",
+      "courseTitle": "Computer Fundamentals",
+      "date": "2025-04-15",
+      "time": "14:00:00",
+      "location": "WB-255",
+      "surnameRange": "SU - XIAN"
+    },
+    {
+      "course": "APS106H1S",
+      "courseTitle": "Fundamentals of Computer Programming",
+      "date": "2025-04-15",
+      "time": "14:00:00",
+      "location": "BA-1160",
+      "surnameRange": "A - FAI"
+    },
+    {
+      "course": "APS106H1S",
+      "courseTitle": "Fundamentals of Computer Programming",
+      "date": "2025-04-15",
+      "time": "14:00:00",
+      "location": "MY-150",
+      "surnameRange": "FAN - PEQ"
+    },
+    {
+      "course": "APS106H1S",
+      "courseTitle": "Fundamentals of Computer Programming",
+      "date": "2025-04-15",
+      "time": "14:00:00",
+      "location": "WB-116",
+      "surnameRange": "PER - WU,A"
+    },
+    {
+      "course": "APS106H1S",
+      "courseTitle": "Fundamentals of Computer Programming",
+      "date": "2025-04-15",
+      "time": "14:00:00",
+      "location": "WB-130",
+      "surnameRange": "WU,H - Z"
+    },
+    {
+      "course": "APS111H1S",
+      "courseTitle": "Engineering Strategies & Practice I",
+      "date": "2025-04-10",
+      "time": "09:30:00",
+      "location": "HA-401",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "APS112H1S",
+      "courseTitle": "Engineering Strategies & Practice II",
+      "date": "2025-04-09",
+      "time": "09:30:00",
+      "location": "ZZ-REFER_TO_FACULTY_SCHEDULE",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "APS164H1S",
+      "courseTitle": "Introductory Chemistry from a Materials Perspective",
+      "date": "2025-04-11",
+      "time": "09:30:00",
+      "location": "BA-2185",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "APS305H1S",
+      "courseTitle": "Energy Policy",
+      "date": "2025-04-22",
+      "time": "09:30:00",
+      "location": "BA-2175",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "APS360H1S",
+      "courseTitle": "Applied Fundamentals of Deep Learning",
+      "date": "2025-04-29",
+      "time": "09:30:00",
+      "location": "EX-100",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "APS420H1S",
+      "courseTitle": "Technology, Engineering and Global Development",
+      "date": "2025-04-25",
+      "time": "14:00:00",
+      "location": "MY-315",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "APS502H1S",
+      "courseTitle": "Financial Engineering",
+      "date": "2025-04-29",
+      "time": "09:30:00",
+      "location": "EX-310",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "APS511H1S",
+      "courseTitle": "INVENTIONS & PATENTS FOR ENG.",
+      "date": "2025-04-12",
+      "time": "14:00:00",
+      "location": "BA-2139",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "BME205H1S",
+      "courseTitle": "Fundamentals of Biomedical Engineering",
+      "date": "2025-04-28",
+      "time": "09:30:00",
+      "location": "MY-150",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "BME330H1S",
+      "courseTitle": "Patents in Bio & Med Devices",
+      "date": "2025-04-21",
+      "time": "14:00:00",
+      "location": "MY-315",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "BME331H1S",
+      "courseTitle": "Physiological Control Systems",
+      "date": "2025-04-11",
+      "time": "09:30:00",
+      "location": "EX-310",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "BME352H1S",
+      "courseTitle": "Biomaterials and Biocompatibility",
+      "date": "2025-04-24",
+      "time": "14:00:00",
+      "location": "MY-370",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "BME358H1S",
+      "courseTitle": "Molecular Biophysics",
+      "date": "2025-04-10",
+      "time": "09:30:00",
+      "location": "GB-304",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "BME396H1S",
+      "courseTitle": "Biomedical Systems Engineering III: Molecules and Cells",
+      "date": "2025-04-17",
+      "time": "14:00:00",
+      "location": "BA-2195",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "BME412H1S",
+      "courseTitle": "Introduction to Biomolecular Engineering",
+      "date": "2025-04-22",
+      "time": "09:30:00",
+      "location": "BA-2159",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "BME530H1S",
+      "courseTitle": "HUMAN WHOLE BODY BIOMECHANICS",
+      "date": "2025-04-23",
+      "time": "14:00:00",
+      "location": "MY-360",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CHE112H1S",
+      "courseTitle": "Physical Chemistry",
+      "date": "2025-04-28",
+      "time": "14:00:00",
+      "location": "BA-1130",
+      "surnameRange": "A - ES"
+    },
+    {
+      "course": "CHE112H1S",
+      "courseTitle": "Physical Chemistry",
+      "date": "2025-04-28",
+      "time": "14:00:00",
+      "location": "BA-1190",
+      "surnameRange": "EV - KID"
+    },
+    {
+      "course": "CHE112H1S",
+      "courseTitle": "Physical Chemistry",
+      "date": "2025-04-28",
+      "time": "14:00:00",
+      "location": "BA-2139",
+      "surnameRange": "KIM - LEE,JE"
+    },
+    {
+      "course": "CHE112H1S",
+      "courseTitle": "Physical Chemistry",
+      "date": "2025-04-28",
+      "time": "14:00:00",
+      "location": "SF-2202",
+      "surnameRange": "LEE,JO - ROM"
+    },
+    {
+      "course": "CHE112H1S",
+      "courseTitle": "Physical Chemistry",
+      "date": "2025-04-28",
+      "time": "14:00:00",
+      "location": "SF-3202",
+      "surnameRange": "ROS - Z"
+    },
+    {
+      "course": "CHE113H1S",
+      "courseTitle": "Concepts in Chemical Engineering",
+      "date": "2025-04-17",
+      "time": "09:30:00",
+      "location": "MY-150",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CHE210H1S",
+      "courseTitle": "Heat and Mass Transfer",
+      "date": "2025-04-11",
+      "time": "14:00:00",
+      "location": "BA-1160",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CHE213H1S",
+      "courseTitle": "Applied Chemistry II - Organic Chemistry",
+      "date": "2025-04-09",
+      "time": "14:00:00",
+      "location": "SF-2202",
+      "surnameRange": "A - CHE"
+    },
+    {
+      "course": "CHE213H1S",
+      "courseTitle": "Applied Chemistry II - Organic Chemistry",
+      "date": "2025-04-09",
+      "time": "14:00:00",
+      "location": "SF-3202",
+      "surnameRange": "CHI - Z"
+    },
+    {
+      "course": "CHE222H1S",
+      "courseTitle": "Process Dynamics: Modeling, Analysis and Situation",
+      "date": "2025-04-26",
+      "time": "14:00:00",
+      "location": "BA-1160",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CHE230H1S",
+      "courseTitle": "Environmental Chemistry",
+      "date": "2025-04-21",
+      "time": "14:00:00",
+      "location": "WB-116",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CHE249H1S",
+      "courseTitle": "Engineering Economic Analysis",
+      "date": "2025-04-14",
+      "time": "14:00:00",
+      "location": "MY-330",
+      "surnameRange": "A - ME"
+    },
+    {
+      "course": "CHE249H1S",
+      "courseTitle": "Engineering Economic Analysis",
+      "date": "2025-04-14",
+      "time": "14:00:00",
+      "location": "MY-360",
+      "surnameRange": "MI - Z"
+    },
+    {
+      "course": "CHE311H1S",
+      "courseTitle": "Separation Processes",
+      "date": "2025-04-28",
+      "time": "09:30:00",
+      "location": "EX-320",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CHE322H1S",
+      "courseTitle": "Process Control",
+      "date": "2025-04-17",
+      "time": "09:30:00",
+      "location": "EX-320",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CHE333H1S",
+      "courseTitle": "Chemical Reaction Engineering",
+      "date": "2025-04-14",
+      "time": "09:30:00",
+      "location": "WB-116",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CHE354H1S",
+      "courseTitle": "Cellular and Molecular Biology",
+      "date": "2025-04-24",
+      "time": "09:30:00",
+      "location": "MY-330",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CHE375H1S",
+      "courseTitle": "Engineering Finance and Economics",
+      "date": "2025-04-16",
+      "time": "14:00:00",
+      "location": "WB-119",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CHE416H1S",
+      "courseTitle": "Chemical Eng in Human Health",
+      "date": "2025-04-16",
+      "time": "14:00:00",
+      "location": "MY-350",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CHE469H1S",
+      "courseTitle": "Fuel Cells and Electrochemical Conversion Devices",
+      "date": "2025-04-16",
+      "time": "09:30:00",
+      "location": "MY-370",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CHE471H1S",
+      "courseTitle": "Modelling in Biological and Chemical Systems",
+      "date": "2025-04-14",
+      "time": "09:30:00",
+      "location": "MY-350",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CHE475H1S",
+      "courseTitle": "Biocomposites: Mechanics and Bioinspiration",
+      "date": "2025-04-09",
+      "time": "09:30:00",
+      "location": "WI-1016",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CHE488H1S",
+      "courseTitle": "Entrepreneurship and Business for Engineers",
+      "date": "2025-04-14",
+      "time": "14:00:00",
+      "location": "MY-350",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CHE561H1S",
+      "courseTitle": "Risk Based Safety Management",
+      "date": "2025-04-24",
+      "time": "14:00:00",
+      "location": "BA-2175",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CIV100H1S",
+      "courseTitle": "Mechanics",
+      "date": "2025-04-30",
+      "time": "09:30:00",
+      "location": "EX-320",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CIV185H1S",
+      "courseTitle": "Earth Systems Science",
+      "date": "2025-04-17",
+      "time": "09:30:00",
+      "location": "WB-116",
+      "surnameRange": "A - YEE"
+    },
+    {
+      "course": "CIV185H1S",
+      "courseTitle": "Earth Systems Science",
+      "date": "2025-04-17",
+      "time": "09:30:00",
+      "location": "WB-119",
+      "surnameRange": "YEU - Z"
+    },
+    {
+      "course": "CIV209H1S",
+      "courseTitle": "Civil Engineering Materials",
+      "date": "2025-04-14",
+      "time": "09:30:00",
+      "location": "GB-144",
+      "surnameRange": "A - MALA"
+    },
+    {
+      "course": "CIV209H1S",
+      "courseTitle": "Civil Engineering Materials",
+      "date": "2025-04-14",
+      "time": "09:30:00",
+      "location": "GB-150",
+      "surnameRange": "MALE - Z"
+    },
+    {
+      "course": "CIV214H1S",
+      "courseTitle": "Structural Analysis I",
+      "date": "2025-04-24",
+      "time": "14:00:00",
+      "location": "VO-AUDB",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CIV250H1S",
+      "courseTitle": "Hydraulics and Hydrology",
+      "date": "2025-04-11",
+      "time": "14:00:00",
+      "location": "EX-320",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CIV300H1S",
+      "courseTitle": "Terrestrial Energy Systems",
+      "date": "2025-04-11",
+      "time": "09:30:00",
+      "location": "MY-150",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CIV313H1S",
+      "courseTitle": "Reinforced Concrete I",
+      "date": "2025-04-23",
+      "time": "09:30:00",
+      "location": "EX-310",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CIV324H1S",
+      "courseTitle": "Geotechnical Engineering II",
+      "date": "2025-04-17",
+      "time": "14:00:00",
+      "location": "MP-103",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CIV332H1S",
+      "courseTitle": "Transport II - Performance",
+      "date": "2025-04-11",
+      "time": "14:00:00",
+      "location": "EX-310",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CIV340H1S",
+      "courseTitle": "Municipal Engineering",
+      "date": "2025-04-28",
+      "time": "09:30:00",
+      "location": "WB-116",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CIV380H1S",
+      "courseTitle": "Sustainable Energy Systems",
+      "date": "2025-04-14",
+      "time": "09:30:00",
+      "location": "SF-3202",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CIV401H1S",
+      "courseTitle": "DESIGN & OPTIMIZATION OF HYDRO",
+      "date": "2025-04-21",
+      "time": "14:00:00",
+      "location": "MY-330",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CIV501H1S",
+      "courseTitle": "Building Energy Performance Simulation",
+      "date": "2025-04-26",
+      "time": "09:30:00",
+      "location": "MY-370",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CIV510H1S",
+      "courseTitle": "Solid Mechanics II",
+      "date": "2025-04-11",
+      "time": "14:00:00",
+      "location": "MY-350",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CIV516H1S",
+      "courseTitle": "Public Transit Operations and Planning",
+      "date": "2025-04-24",
+      "time": "14:00:00",
+      "location": "BA-2159",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CIV518H1S",
+      "courseTitle": "Behaviour and Design of Steel Structures",
+      "date": "2025-04-14",
+      "time": "09:30:00",
+      "location": "BA-2195",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CIV544H1S",
+      "courseTitle": "Design of Timber Structures",
+      "date": "2025-04-23",
+      "time": "09:30:00",
+      "location": "MY-030",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CIV578H1S",
+      "courseTitle": "DESIGN OF BUILDING ENCLOSURES",
+      "date": "2025-04-24",
+      "time": "14:00:00",
+      "location": "BA-2195",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CME259H1S",
+      "courseTitle": "TECH IN SOCIETY & BIOSPHERE",
+      "date": "2025-04-16",
+      "time": "09:30:00",
+      "location": "SF-1012",
+      "surnameRange": "A - EV"
+    },
+    {
+      "course": "CME259H1S",
+      "courseTitle": "TECH IN SOCIETY & BIOSPHERE",
+      "date": "2025-04-16",
+      "time": "09:30:00",
+      "location": "SF-1013",
+      "surnameRange": "EZ - Z"
+    },
+    {
+      "course": "CME262H1S",
+      "courseTitle": "ENGINEERING MATHEMATICS II",
+      "date": "2025-04-26",
+      "time": "14:00:00",
+      "location": "MS-3154",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "CME263H1S",
+      "courseTitle": "Probability Theory for Civil and Mineral Engineers",
+      "date": "2025-04-21",
+      "time": "14:00:00",
+      "location": "MS-3154",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE110H1S",
+      "courseTitle": "Electrical Fundamentals",
+      "date": "2025-04-28",
+      "time": "14:00:00",
+      "location": "BA-1160",
+      "surnameRange": "A - CHIG"
+    },
+    {
+      "course": "ECE110H1S",
+      "courseTitle": "Electrical Fundamentals",
+      "date": "2025-04-28",
+      "time": "14:00:00",
+      "location": "MY-150",
+      "surnameRange": "CHIN - LIU,M"
+    },
+    {
+      "course": "ECE110H1S",
+      "courseTitle": "Electrical Fundamentals",
+      "date": "2025-04-28",
+      "time": "14:00:00",
+      "location": "MY-315",
+      "surnameRange": "LIU,Y - NAMB"
+    },
+    {
+      "course": "ECE110H1S",
+      "courseTitle": "Electrical Fundamentals",
+      "date": "2025-04-28",
+      "time": "14:00:00",
+      "location": "MY-330",
+      "surnameRange": "NAMG - R"
+    },
+    {
+      "course": "ECE110H1S",
+      "courseTitle": "Electrical Fundamentals",
+      "date": "2025-04-28",
+      "time": "14:00:00",
+      "location": "MY-360",
+      "surnameRange": "S - TANG,J"
+    },
+    {
+      "course": "ECE110H1S",
+      "courseTitle": "Electrical Fundamentals",
+      "date": "2025-04-28",
+      "time": "14:00:00",
+      "location": "WB-116",
+      "surnameRange": "TANG,T - Z"
+    },
+    {
+      "course": "ECE159H1S",
+      "courseTitle": "Fundamentals of Electric Circuits",
+      "date": "2025-04-22",
+      "time": "14:00:00",
+      "location": "MY-150",
+      "surnameRange": "A - W"
+    },
+    {
+      "course": "ECE159H1S",
+      "courseTitle": "Fundamentals of Electric Circuits",
+      "date": "2025-04-22",
+      "time": "14:00:00",
+      "location": "MY-370",
+      "surnameRange": "X - Z"
+    },
+    {
+      "course": "ECE212H1S",
+      "courseTitle": "Circuit Analysis",
+      "date": "2025-04-26",
+      "time": "09:30:00",
+      "location": "EX-100",
+      "surnameRange": "A - SINGH,B"
+    },
+    {
+      "course": "ECE212H1S",
+      "courseTitle": "Circuit Analysis",
+      "date": "2025-04-26",
+      "time": "09:30:00",
+      "location": "EX-310",
+      "surnameRange": "SINGH,L - Z"
+    },
+    {
+      "course": "ECE216H1S",
+      "courseTitle": "Signals and Systems",
+      "date": "2025-04-17",
+      "time": "14:00:00",
+      "location": "EX-200",
+      "surnameRange": "A - SUL"
+    },
+    {
+      "course": "ECE216H1S",
+      "courseTitle": "Signals and Systems",
+      "date": "2025-04-17",
+      "time": "14:00:00",
+      "location": "EX-310",
+      "surnameRange": "SUN - Z"
+    },
+    {
+      "course": "ECE221H1S",
+      "courseTitle": "Electric and Magnetic Fields",
+      "date": "2025-04-14",
+      "time": "14:00:00",
+      "location": "EX-100",
+      "surnameRange": "A - LIN,J"
+    },
+    {
+      "course": "ECE221H1S",
+      "courseTitle": "Electric and Magnetic Fields",
+      "date": "2025-04-14",
+      "time": "14:00:00",
+      "location": "MY-150",
+      "surnameRange": "LIN,T - Z"
+    },
+    {
+      "course": "ECE243H1S",
+      "courseTitle": "Computer Organization",
+      "date": "2025-04-22",
+      "time": "14:00:00",
+      "location": "EX-200",
+      "surnameRange": "A - SM"
+    },
+    {
+      "course": "ECE243H1S",
+      "courseTitle": "Computer Organization",
+      "date": "2025-04-22",
+      "time": "14:00:00",
+      "location": "EX-320",
+      "surnameRange": "SO - Z"
+    },
+    {
+      "course": "ECE259H1S",
+      "courseTitle": "Electromagnetism",
+      "date": "2025-04-09",
+      "time": "09:30:00",
+      "location": "HA-403",
+      "surnameRange": "A - FANG,R"
+    },
+    {
+      "course": "ECE259H1S",
+      "courseTitle": "Electromagnetism",
+      "date": "2025-04-09",
+      "time": "09:30:00",
+      "location": "SF-2202",
+      "surnameRange": "FANG,Y - MAC"
+    },
+    {
+      "course": "ECE259H1S",
+      "courseTitle": "Electromagnetism",
+      "date": "2025-04-09",
+      "time": "09:30:00",
+      "location": "SF-3202",
+      "surnameRange": "MAH - Z"
+    },
+    {
+      "course": "ECE286H1S",
+      "courseTitle": "Probability & Statistics",
+      "date": "2025-04-16",
+      "time": "14:00:00",
+      "location": "MY-150",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE295H1S",
+      "courseTitle": "HARDWARE DESIGN AND COMM.",
+      "date": "2025-04-30",
+      "time": "09:30:00",
+      "location": "ZZ-REFER_TO_FACULTY_SCHEDULE",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE297H1S",
+      "courseTitle": "Software Design and Communication",
+      "date": "2025-04-30",
+      "time": "09:30:00",
+      "location": "ZZ-REFER_TO_FACULTY_SCHEDULE",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE302H1S",
+      "courseTitle": "Probability and Applications",
+      "date": "2025-04-26",
+      "time": "09:30:00",
+      "location": "SF-3202",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE311H1S",
+      "courseTitle": "Introduction to Control Systems",
+      "date": "2025-04-21",
+      "time": "09:30:00",
+      "location": "MY-150",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE313H1S",
+      "courseTitle": "Energy Systems and Distributed Generation",
+      "date": "2025-04-14",
+      "time": "09:30:00",
+      "location": "BA-2165",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE316H1S",
+      "courseTitle": "Communication Systems",
+      "date": "2025-04-17",
+      "time": "14:00:00",
+      "location": "BA-2165",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE318H1S",
+      "courseTitle": "Fundamentals of Optics",
+      "date": "2025-04-16",
+      "time": "09:30:00",
+      "location": "WB-116",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE324H1S",
+      "courseTitle": "Machine Intelligence, Software and Neural Networks",
+      "date": "2025-04-10",
+      "time": "14:00:00",
+      "location": "SF-2202",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE330H1S",
+      "courseTitle": "Semiconductor and Device Physics",
+      "date": "2025-04-15",
+      "time": "09:30:00",
+      "location": "MY-370",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE334H1S",
+      "courseTitle": "Digital Electronics",
+      "date": "2025-04-10",
+      "time": "09:30:00",
+      "location": "SF-2202",
+      "surnameRange": "A - HU,E"
+    },
+    {
+      "course": "ECE334H1S",
+      "courseTitle": "Digital Electronics",
+      "date": "2025-04-10",
+      "time": "09:30:00",
+      "location": "SF-3202",
+      "surnameRange": "HU,Z - Z"
+    },
+    {
+      "course": "ECE342H1S",
+      "courseTitle": "Computer Hardware",
+      "date": "2025-04-17",
+      "time": "09:30:00",
+      "location": "MY-350",
+      "surnameRange": "A - DEL"
+    },
+    {
+      "course": "ECE342H1S",
+      "courseTitle": "Computer Hardware",
+      "date": "2025-04-17",
+      "time": "09:30:00",
+      "location": "MY-360",
+      "surnameRange": "DEN - SAD"
+    },
+    {
+      "course": "ECE342H1S",
+      "courseTitle": "Computer Hardware",
+      "date": "2025-04-17",
+      "time": "09:30:00",
+      "location": "MY-370",
+      "surnameRange": "SAV - Z"
+    },
+    {
+      "course": "ECE344H1S",
+      "courseTitle": "Operating Systems",
+      "date": "2025-04-14",
+      "time": "09:30:00",
+      "location": "BA-2185",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE345H1S",
+      "courseTitle": "Algorithms and Data Structures",
+      "date": "2025-04-11",
+      "time": "14:00:00",
+      "location": "BA-2185",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE350H1S",
+      "courseTitle": "Semiconductor Electronic Devices",
+      "date": "2025-04-14",
+      "time": "09:30:00",
+      "location": "BA-2139",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE353H1S",
+      "courseTitle": "Systems Software",
+      "date": "2025-04-30",
+      "time": "09:30:00",
+      "location": "GB-303",
+      "surnameRange": "A - GH"
+    },
+    {
+      "course": "ECE353H1S",
+      "courseTitle": "Systems Software",
+      "date": "2025-04-30",
+      "time": "09:30:00",
+      "location": "GB-304",
+      "surnameRange": "GI - Z"
+    },
+    {
+      "course": "ECE354H1S",
+      "courseTitle": "Electronic Circuits",
+      "date": "2025-04-22",
+      "time": "14:00:00",
+      "location": "MY-360",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE356H1S",
+      "courseTitle": "Introduction to Control Theory",
+      "date": "2025-04-28",
+      "time": "09:30:00",
+      "location": "MY-330",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE357H1S",
+      "courseTitle": "Electromagnetic Fields",
+      "date": "2025-04-26",
+      "time": "14:00:00",
+      "location": "BA-2195",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE361H1S",
+      "courseTitle": "Computer Networks I",
+      "date": "2025-04-21",
+      "time": "14:00:00",
+      "location": "MY-150",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE363H1S",
+      "courseTitle": "Communication Systems",
+      "date": "2025-04-17",
+      "time": "14:00:00",
+      "location": "MY-370",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE368H1S",
+      "courseTitle": "Probabilistic Reasoning",
+      "date": "2025-04-26",
+      "time": "14:00:00",
+      "location": "SF-2202",
+      "surnameRange": "A - GUA"
+    },
+    {
+      "course": "ECE368H1S",
+      "courseTitle": "Probabilistic Reasoning",
+      "date": "2025-04-26",
+      "time": "14:00:00",
+      "location": "SF-3202",
+      "surnameRange": "GUO - Z"
+    },
+    {
+      "course": "ECE411H1S",
+      "courseTitle": "Adaptive Control and Reinforcement Learning",
+      "date": "2025-04-15",
+      "time": "14:00:00",
+      "location": "MY-370",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE412H1S",
+      "courseTitle": "ANALOG SIGNAL PROCESSING CIRC.",
+      "date": "2025-04-24",
+      "time": "14:00:00",
+      "location": "BA-1190",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE419H1S",
+      "courseTitle": "Distributed Systems",
+      "date": "2025-04-14",
+      "time": "09:30:00",
+      "location": "BA-1160",
+      "surnameRange": "A - WANG,T"
+    },
+    {
+      "course": "ECE419H1S",
+      "courseTitle": "Distributed Systems",
+      "date": "2025-04-14",
+      "time": "09:30:00",
+      "location": "BA-1170",
+      "surnameRange": "WANG,Y - Z"
+    },
+    {
+      "course": "ECE421H1S",
+      "courseTitle": "Introduction to Machine Learning",
+      "date": "2025-04-23",
+      "time": "14:00:00",
+      "location": "MY-150",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE422H1S",
+      "courseTitle": "Radio and Microwave Wireless Systems",
+      "date": "2025-04-26",
+      "time": "09:30:00",
+      "location": "BA-2165",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE437H1S",
+      "courseTitle": "VLSI TECHNOLOGY",
+      "date": "2025-04-12",
+      "time": "14:00:00",
+      "location": "MY-315",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE462H1S",
+      "courseTitle": "Multimedia Systems",
+      "date": "2025-04-24",
+      "time": "14:00:00",
+      "location": "MY-360",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE463H1S",
+      "courseTitle": "Electric Drives",
+      "date": "2025-04-12",
+      "time": "09:30:00",
+      "location": "BA-2165",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE466H1S",
+      "courseTitle": "Computer Networks II",
+      "date": "2025-04-17",
+      "time": "09:30:00",
+      "location": "BA-2159",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE469H1S",
+      "courseTitle": "Optical Communications and Networks",
+      "date": "2025-04-11",
+      "time": "14:00:00",
+      "location": "BA-2159",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE470H1S",
+      "courseTitle": "Robot Modeling and Control",
+      "date": "2025-04-28",
+      "time": "14:00:00",
+      "location": "GB-304",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE472H1S",
+      "courseTitle": "Engineering Economic Analysis & Entrepreneurship",
+      "date": "2025-04-09",
+      "time": "14:00:00",
+      "location": "EX-320",
+      "surnameRange": "A - LIU,E"
+    },
+    {
+      "course": "ECE472H1S",
+      "courseTitle": "Engineering Economic Analysis & Entrepreneurship",
+      "date": "2025-04-09",
+      "time": "14:00:00",
+      "location": "WB-116",
+      "surnameRange": "LIU,S - ZHA"
+    },
+    {
+      "course": "ECE472H1S",
+      "courseTitle": "Engineering Economic Analysis & Entrepreneurship",
+      "date": "2025-04-09",
+      "time": "14:00:00",
+      "location": "WB-119",
+      "surnameRange": "ZHE - Z"
+    },
+    {
+      "course": "ECE516H1S",
+      "courseTitle": "Intelligent Image Processing",
+      "date": "2025-04-23",
+      "time": "09:30:00",
+      "location": "SF-1012",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ECE568H1S",
+      "courseTitle": "Computer Security",
+      "date": "2025-04-12",
+      "time": "09:30:00",
+      "location": "MY-150",
+      "surnameRange": "A - ZHANG,K"
+    },
+    {
+      "course": "ECE568H1S",
+      "courseTitle": "Computer Security",
+      "date": "2025-04-12",
+      "time": "09:30:00",
+      "location": "MY-370",
+      "surnameRange": "ZHANG,X - Z"
+    },
+    {
+      "course": "ESC102H1S",
+      "courseTitle": "Praxis II",
+      "date": "2025-04-10",
+      "time": "09:30:00",
+      "location": "ZZ-REFER_TO_FACULTY_SCHEDULE",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ESC190H1S",
+      "courseTitle": "COMP. ALGOR. & DATA STRUCTURES",
+      "date": "2025-04-15",
+      "time": "14:00:00",
+      "location": "BA-1130",
+      "surnameRange": "A - FI"
+    },
+    {
+      "course": "ESC190H1S",
+      "courseTitle": "COMP. ALGOR. & DATA STRUCTURES",
+      "date": "2025-04-15",
+      "time": "14:00:00",
+      "location": "SF-2202",
+      "surnameRange": "FO - ME"
+    },
+    {
+      "course": "ESC190H1S",
+      "courseTitle": "COMP. ALGOR. & DATA STRUCTURES",
+      "date": "2025-04-15",
+      "time": "14:00:00",
+      "location": "SF-3202",
+      "surnameRange": "MI - Z"
+    },
+    {
+      "course": "ESC195H1S",
+      "courseTitle": "Calculus II",
+      "date": "2025-04-17",
+      "time": "14:00:00",
+      "location": "SF-2202",
+      "surnameRange": "A - FA"
+    },
+    {
+      "course": "ESC195H1S",
+      "courseTitle": "Calculus II",
+      "date": "2025-04-17",
+      "time": "14:00:00",
+      "location": "SF-3202",
+      "surnameRange": "FE - R"
+    },
+    {
+      "course": "ESC195H1S",
+      "courseTitle": "Calculus II",
+      "date": "2025-04-17",
+      "time": "14:00:00",
+      "location": "WB-130",
+      "surnameRange": "S - Z"
+    },
+    {
+      "course": "FOR424H1S",
+      "courseTitle": "Innovation and Manufacturing of Sustainable Materials",
+      "date": "2025-04-12",
+      "time": "14:00:00",
+      "location": "MY-330",
+      "surnameRange": "A - MAH"
+    },
+    {
+      "course": "FOR424H1S",
+      "courseTitle": "Innovation and Manufacturing of Sustainable Materials",
+      "date": "2025-04-12",
+      "time": "14:00:00",
+      "location": "MY-360",
+      "surnameRange": "MAN - Z"
+    },
+    {
+      "course": "FOR425H1S",
+      "courseTitle": "Bioenergy and Biorefinery Technology",
+      "date": "2025-04-17",
+      "time": "14:00:00",
+      "location": "MY-360",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "JRE300H1S",
+      "courseTitle": "Fundamentals of Accounting and Finance",
+      "date": "2025-04-15",
+      "time": "09:30:00",
+      "location": "EX-310",
+      "surnameRange": "A - KI"
+    },
+    {
+      "course": "JRE300H1S",
+      "courseTitle": "Fundamentals of Accounting and Finance",
+      "date": "2025-04-15",
+      "time": "09:30:00",
+      "location": "EX-320",
+      "surnameRange": "KO - Z"
+    },
+    {
+      "course": "JRE410H1S",
+      "courseTitle": "Markets and Competitive Strategy",
+      "date": "2025-04-22",
+      "time": "09:30:00",
+      "location": "MP-102",
+      "surnameRange": "A - MI"
+    },
+    {
+      "course": "JRE410H1S",
+      "courseTitle": "Markets and Competitive Strategy",
+      "date": "2025-04-22",
+      "time": "09:30:00",
+      "location": "MP-103",
+      "surnameRange": "MO - Z"
+    },
+    {
+      "course": "JRE420H1S",
+      "courseTitle": "People Management and Organizational Behaviour",
+      "date": "2025-04-10",
+      "time": "14:00:00",
+      "location": "WB-116",
+      "surnameRange": "A - SAV"
+    },
+    {
+      "course": "JRE420H1S",
+      "courseTitle": "People Management and Organizational Behaviour",
+      "date": "2025-04-10",
+      "time": "14:00:00",
+      "location": "WB-130",
+      "surnameRange": "SAW - Z"
+    },
+    {
+      "course": "MAT185H1S",
+      "courseTitle": "Linear Algebra",
+      "date": "2025-04-29",
+      "time": "14:00:00",
+      "location": "EX-200",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MAT186H1S",
+      "courseTitle": "Calculus I",
+      "date": "2025-04-22",
+      "time": "14:00:00",
+      "location": "EX-310",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MAT187H1S",
+      "courseTitle": "Calculus II",
+      "date": "2025-04-22",
+      "time": "09:30:00",
+      "location": "BN-210_N",
+      "surnameRange": "A - DONA"
+    },
+    {
+      "course": "MAT187H1S",
+      "courseTitle": "Calculus II",
+      "date": "2025-04-22",
+      "time": "09:30:00",
+      "location": "BN-210_S",
+      "surnameRange": "DONG - KH"
+    },
+    {
+      "course": "MAT187H1S",
+      "courseTitle": "Calculus II",
+      "date": "2025-04-22",
+      "time": "09:30:00",
+      "location": "BN-322",
+      "surnameRange": "KI - RAMP"
+    },
+    {
+      "course": "MAT187H1S",
+      "courseTitle": "Calculus II",
+      "date": "2025-04-22",
+      "time": "09:30:00",
+      "location": "EX-100",
+      "surnameRange": "RAMS - Z"
+    },
+    {
+      "course": "MAT188H1S",
+      "courseTitle": "Linear Algebra",
+      "date": "2025-04-24",
+      "time": "14:00:00",
+      "location": "MY-315",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MAT234H1S",
+      "courseTitle": "Differential Equations",
+      "date": "2025-04-24",
+      "time": "09:30:00",
+      "location": "BA-1130",
+      "surnameRange": "A - KE"
+    },
+    {
+      "course": "MAT234H1S",
+      "courseTitle": "Differential Equations",
+      "date": "2025-04-24",
+      "time": "09:30:00",
+      "location": "BA-1160",
+      "surnameRange": "KI - Z"
+    },
+    {
+      "course": "MIE100H1S",
+      "courseTitle": "Dynamics",
+      "date": "2025-04-30",
+      "time": "09:30:00",
+      "location": "EX-100",
+      "surnameRange": "A - LO"
+    },
+    {
+      "course": "MIE100H1S",
+      "courseTitle": "Dynamics",
+      "date": "2025-04-30",
+      "time": "09:30:00",
+      "location": "EX-200",
+      "surnameRange": "LU - Z"
+    },
+    {
+      "course": "MIE210H1S",
+      "courseTitle": "Thermodynamics",
+      "date": "2025-04-14",
+      "time": "09:30:00",
+      "location": "MY-150",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE221H1S",
+      "courseTitle": "Manufacturing Engineering",
+      "date": "2025-04-12",
+      "time": "09:30:00",
+      "location": "WB-116",
+      "surnameRange": "A - RAMD"
+    },
+    {
+      "course": "MIE221H1S",
+      "courseTitle": "Manufacturing Engineering",
+      "date": "2025-04-12",
+      "time": "09:30:00",
+      "location": "WB-130",
+      "surnameRange": "RAME - Z"
+    },
+    {
+      "course": "MIE222H1S",
+      "courseTitle": "Mechanics of Solids I",
+      "date": "2025-04-16",
+      "time": "14:00:00",
+      "location": "MP-102",
+      "surnameRange": "A - MCD"
+    },
+    {
+      "course": "MIE222H1S",
+      "courseTitle": "Mechanics of Solids I",
+      "date": "2025-04-16",
+      "time": "14:00:00",
+      "location": "MP-103",
+      "surnameRange": "MCK - Z"
+    },
+    {
+      "course": "MIE223H1S",
+      "courseTitle": "Data Science",
+      "date": "2025-04-23",
+      "time": "14:00:00",
+      "location": "EX-320",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE237H1S",
+      "courseTitle": "Statistics",
+      "date": "2025-04-16",
+      "time": "14:00:00",
+      "location": "SF-3202",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE240H1S",
+      "courseTitle": "Human Factors Engineering",
+      "date": "2025-04-10",
+      "time": "14:00:00",
+      "location": "SF-3202",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE245H1S",
+      "courseTitle": "Data Structures & Algorithms",
+      "date": "2025-04-25",
+      "time": "14:00:00",
+      "location": "MY-150",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE263H1S",
+      "courseTitle": "Stochastic Operations Research",
+      "date": "2025-04-21",
+      "time": "14:00:00",
+      "location": "SF-3202",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE304H1S",
+      "courseTitle": "Intro to Quality Control",
+      "date": "2025-04-17",
+      "time": "09:30:00",
+      "location": "GB-150",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE311H1S",
+      "courseTitle": "THERMAL ENERGY CONVERSION",
+      "date": "2025-04-12",
+      "time": "09:30:00",
+      "location": "MY-315",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE313H1S",
+      "courseTitle": "Heat and Mass Transfer",
+      "date": "2025-04-14",
+      "time": "14:00:00",
+      "location": "WB-116",
+      "surnameRange": "A - PRA"
+    },
+    {
+      "course": "MIE313H1S",
+      "courseTitle": "Heat and Mass Transfer",
+      "date": "2025-04-14",
+      "time": "14:00:00",
+      "location": "WB-130",
+      "surnameRange": "PRI - Z"
+    },
+    {
+      "course": "MIE315H1S",
+      "courseTitle": "Design for the Environment",
+      "date": "2025-04-09",
+      "time": "09:30:00",
+      "location": "HA-401",
+      "surnameRange": "A - FA"
+    },
+    {
+      "course": "MIE315H1S",
+      "courseTitle": "Design for the Environment",
+      "date": "2025-04-09",
+      "time": "09:30:00",
+      "location": "HA-410",
+      "surnameRange": "FE - LAM"
+    },
+    {
+      "course": "MIE315H1S",
+      "courseTitle": "Design for the Environment",
+      "date": "2025-04-09",
+      "time": "09:30:00",
+      "location": "WB-119",
+      "surnameRange": "LAN - MIR"
+    },
+    {
+      "course": "MIE315H1S",
+      "courseTitle": "Design for the Environment",
+      "date": "2025-04-09",
+      "time": "09:30:00",
+      "location": "WB-130",
+      "surnameRange": "MIT - Z"
+    },
+    {
+      "course": "MIE320H1S",
+      "courseTitle": "Mechanics of Solids II",
+      "date": "2025-04-10",
+      "time": "14:00:00",
+      "location": "BA-1160",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE334H1S",
+      "courseTitle": "Numerical Methods I",
+      "date": "2025-04-23",
+      "time": "09:30:00",
+      "location": "MY-150",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE345H1S",
+      "courseTitle": "Case Studies in Human Factors and Ergonomics",
+      "date": "2025-04-29",
+      "time": "09:30:00",
+      "location": "BA-2139",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE346H1S",
+      "courseTitle": "Analog and Digital Electronics for Mechatronics",
+      "date": "2025-04-30",
+      "time": "09:30:00",
+      "location": "SF-2202",
+      "surnameRange": "A - HAF"
+    },
+    {
+      "course": "MIE346H1S",
+      "courseTitle": "Analog and Digital Electronics for Mechatronics",
+      "date": "2025-04-30",
+      "time": "09:30:00",
+      "location": "SF-3202",
+      "surnameRange": "HAN - Z"
+    },
+    {
+      "course": "MIE350H1S",
+      "courseTitle": "Design and Analysis of Information Systems",
+      "date": "2025-04-09",
+      "time": "14:00:00",
+      "location": "SF-2202",
+      "surnameRange": "A - KWA"
+    },
+    {
+      "course": "MIE350H1S",
+      "courseTitle": "Design and Analysis of Information Systems",
+      "date": "2025-04-09",
+      "time": "14:00:00",
+      "location": "WB-130",
+      "surnameRange": "KWO - Z"
+    },
+    {
+      "course": "MIE359H1S",
+      "courseTitle": "Organization Design",
+      "date": "2025-04-12",
+      "time": "09:30:00",
+      "location": "MS-3153",
+      "surnameRange": "A - OH"
+    },
+    {
+      "course": "MIE359H1S",
+      "courseTitle": "Organization Design",
+      "date": "2025-04-12",
+      "time": "09:30:00",
+      "location": "MS-3154",
+      "surnameRange": "OV - Z"
+    },
+    {
+      "course": "MIE363H1S",
+      "courseTitle": "Operations and Supply Chain Management",
+      "date": "2025-04-21",
+      "time": "09:30:00",
+      "location": "WB-116",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE369H1S",
+      "courseTitle": "Introduction to Artificial Intelligence",
+      "date": "2025-04-24",
+      "time": "14:00:00",
+      "location": "MY-360",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE376H1S",
+      "courseTitle": "Mathematical Programming (Optimization)",
+      "date": "2025-04-29",
+      "time": "14:00:00",
+      "location": "GB-150",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE377H1S",
+      "courseTitle": "Financial Optimization Models",
+      "date": "2025-04-11",
+      "time": "14:00:00",
+      "location": "BA-2175",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE402H1S",
+      "courseTitle": "Vibrations",
+      "date": "2025-04-17",
+      "time": "14:00:00",
+      "location": "BA-2159",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE424H1S",
+      "courseTitle": "Optimization in Machine Learning",
+      "date": "2025-04-17",
+      "time": "14:00:00",
+      "location": "MY-330",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE438H1S",
+      "courseTitle": "Microcontrollers and Embedded Microprocessors",
+      "date": "2025-04-12",
+      "time": "09:30:00",
+      "location": "BA-1160",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE441H1S",
+      "courseTitle": "* Design Optimization",
+      "date": "2025-04-28",
+      "time": "09:30:00",
+      "location": "MY-360",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE457H1S",
+      "courseTitle": "Knowledge Modelling and Management",
+      "date": "2025-04-28",
+      "time": "09:30:00",
+      "location": "GB-303",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE469H1S",
+      "courseTitle": "Reliability and Maintainability Engineering",
+      "date": "2025-04-14",
+      "time": "09:30:00",
+      "location": "MY-030",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE505H1S",
+      "courseTitle": "Micro/Nano Robotics",
+      "date": "2025-04-30",
+      "time": "09:30:00",
+      "location": "MY-350",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE506H1S",
+      "courseTitle": "* MEMS Design and Microfabrication",
+      "date": "2025-04-25",
+      "time": "14:00:00",
+      "location": "MY-350",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE517H1S",
+      "courseTitle": "Fuel Cell Systems",
+      "date": "2025-04-16",
+      "time": "14:00:00",
+      "location": "MY-370",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE519H1S",
+      "courseTitle": "ADVANCED MANUFACTURING TECH.",
+      "date": "2025-04-26",
+      "time": "14:00:00",
+      "location": "MY-315",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE535H1S",
+      "courseTitle": "Electrification Via Electrcity Markets",
+      "date": "2025-04-23",
+      "time": "09:30:00",
+      "location": "GB-150",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE550H1S",
+      "courseTitle": "Advanced Momentum, Heat and Mass Transfer",
+      "date": "2025-04-24",
+      "time": "14:00:00",
+      "location": "BA-2185",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE561H1S",
+      "courseTitle": "Healthcare Systems",
+      "date": "2025-04-26",
+      "time": "14:00:00",
+      "location": "BA-2165",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIE567H1S",
+      "courseTitle": "DYN & DIST DECISION MAKING",
+      "date": "2025-04-16",
+      "time": "14:00:00",
+      "location": "BA-2165",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIN120H1S",
+      "courseTitle": "Mineral Engineering",
+      "date": "2025-04-17",
+      "time": "09:30:00",
+      "location": "MY-330",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIN250H1S",
+      "courseTitle": "Surface Mining",
+      "date": "2025-04-09",
+      "time": "14:00:00",
+      "location": "HA-410",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIN320H1S",
+      "courseTitle": "Explosives and Fragmentation in Mining",
+      "date": "2025-04-11",
+      "time": "14:00:00",
+      "location": "BA-2165",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIN330H1S",
+      "courseTitle": "MINING ENVIRONMENTAL MGMT",
+      "date": "2025-04-29",
+      "time": "09:30:00",
+      "location": "MY-370",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIN350H1S",
+      "courseTitle": "Mineral Economics",
+      "date": "2025-04-26",
+      "time": "14:00:00",
+      "location": "BA-2139",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIN351H1S",
+      "courseTitle": "Underground Mining",
+      "date": "2025-04-17",
+      "time": "14:00:00",
+      "location": "BA-2139",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MIN470H1S",
+      "courseTitle": "Ventilation and Occupational Health",
+      "date": "2025-04-21",
+      "time": "14:00:00",
+      "location": "MY-360",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MSE120H1S",
+      "courseTitle": "Materials Engineering, Processing, and Application",
+      "date": "2025-04-17",
+      "time": "09:30:00",
+      "location": "WB-130",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MSE160H1S",
+      "courseTitle": "Molecules and Materials",
+      "date": "2025-04-24",
+      "time": "09:30:00",
+      "location": "EX-320",
+      "surnameRange": "A - LIA"
+    },
+    {
+      "course": "MSE160H1S",
+      "courseTitle": "Molecules and Materials",
+      "date": "2025-04-24",
+      "time": "09:30:00",
+      "location": "MS-3154",
+      "surnameRange": "LIN - Z"
+    },
+    {
+      "course": "MSE217H1S",
+      "courseTitle": "Diffusion and Kinetics",
+      "date": "2025-04-17",
+      "time": "14:00:00",
+      "location": "MY-315",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MSE218H1S",
+      "courseTitle": "PHASE TRANSFORMATIONS",
+      "date": "2025-04-26",
+      "time": "14:00:00",
+      "location": "GB-304",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MSE222H1S",
+      "courseTitle": "Mechanics of Solid Materials",
+      "date": "2025-04-15",
+      "time": "14:00:00",
+      "location": "MY-330",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MSE238H1S",
+      "courseTitle": "Engineering Statistics and Numerical Methods",
+      "date": "2025-04-29",
+      "time": "09:30:00",
+      "location": "BA-1180",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MSE245H1S",
+      "courseTitle": "Organic Materials Chemistry and Properties",
+      "date": "2025-04-22",
+      "time": "14:00:00",
+      "location": "MY-330",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MSE301H1S",
+      "courseTitle": "Mineral Processing",
+      "date": "2025-04-16",
+      "time": "09:30:00",
+      "location": "MY-350",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MSE332H1S",
+      "courseTitle": "Heat and Mass Transfer for Materials Processing",
+      "date": "2025-04-09",
+      "time": "14:00:00",
+      "location": "GB-304",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MSE343H1S",
+      "courseTitle": "Intro to Biomaterials",
+      "date": "2025-04-29",
+      "time": "14:00:00",
+      "location": "BA-2139",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MSE351H1S",
+      "courseTitle": "Design and Simulation of Materials Processes",
+      "date": "2025-04-14",
+      "time": "09:30:00",
+      "location": "WB-130",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MSE355H1S",
+      "courseTitle": "Materials Production",
+      "date": "2025-04-16",
+      "time": "14:00:00",
+      "location": "MY-315",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MSE430H1S",
+      "courseTitle": "Electronic Materials",
+      "date": "2025-04-15",
+      "time": "09:30:00",
+      "location": "MY-315",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MSE431H1S",
+      "courseTitle": "Forensic Engineering",
+      "date": "2025-04-21",
+      "time": "09:30:00",
+      "location": "EX-310",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MSE458H1S",
+      "courseTitle": "Nanotech in Alt Energy Systems",
+      "date": "2025-04-11",
+      "time": "14:00:00",
+      "location": "MY-370",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "MSE543H1S",
+      "courseTitle": "Composite Materials Engineering",
+      "date": "2025-04-17",
+      "time": "14:00:00",
+      "location": "MP-102",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "PHY294H1S",
+      "courseTitle": "Quantum and Thermal Physics",
+      "date": "2025-04-24",
+      "time": "09:30:00",
+      "location": "MY-150",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "PHY327H1S",
+      "courseTitle": "Advanced Physics Laboratory",
+      "date": "2025-04-30",
+      "time": "09:30:00",
+      "location": "ZZ-REFER_TO_FACULTY_SCHEDULE",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "PHY427H1S",
+      "courseTitle": "Advanced Physics Laboratory",
+      "date": "2025-04-30",
+      "time": "09:30:00",
+      "location": "ZZ-REFER_TO_FACULTY_SCHEDULE",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ROB311H1S",
+      "courseTitle": "ARTIFICIAL INTELLIGENCE",
+      "date": "2025-04-14",
+      "time": "14:00:00",
+      "location": "GB-304",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ROB313H1S",
+      "courseTitle": "INTRO TO LEARNING FROM DATA",
+      "date": "2025-04-17",
+      "time": "14:00:00",
+      "location": "GB-304",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "ROB521H1S",
+      "courseTitle": "MOBILE ROBOTICS AND PERCEPTION",
+      "date": "2025-04-28",
+      "time": "09:30:00",
+      "location": "MP-103",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "TEP234H1S",
+      "courseTitle": "ENTREPRENEURSHIP AND SMALL BUS",
+      "date": "2025-04-30",
+      "time": "09:30:00",
+      "location": "MY-370",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "TEP321H1S",
+      "courseTitle": "INTRODUCTION TO SCIENCE COMMUNICATION",
+      "date": "2025-04-22",
+      "time": "14:00:00",
+      "location": "MY-315",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "TEP327H1S",
+      "courseTitle": "ENGINEERING AND LAW",
+      "date": "2025-04-30",
+      "time": "09:30:00",
+      "location": "ZZ-REFER_TO_FACULTY_SCHEDULE",
+      "surnameRange": "A - Z"
+    },
+    {
+      "course": "TEP343H1S",
+      "courseTitle": "Engineering Leadership",
+      "date": "2025-04-15",
+      "time": "14:00:00",
+      "location": "EX-310",
+      "surnameRange": "A - Z"
+    }
+  ]
+}

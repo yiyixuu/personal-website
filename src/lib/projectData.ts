@@ -486,15 +486,17 @@ I personally always wanted to be able to import my exam schedule into my Google 
 
 Since I published this tool, it has had 150+ users!
 
-The site is coded with Python and hosted on Streamlit. Once the user selects their courses, the tool generates an iCal file complete with all the details of the exams, including the location (based on last name), time, and duration.
+Once the user selects their courses, the tool generates an iCal file complete with all the details of the exams, including the location (based on last name), time, and duration.
 
 I even got some feedback from the Dean of Engineering himself!
 
 <img src="/images/exam_feedback.png" alt="Exam Calendar Export Tool" className="rounded-lg border border-zinc-800" />
+
+It originally ran on Python and Streamlit; it now runs natively on this site as a client-side Next.js page, with no server involved.
 `,
-    technologies: ["Python", "Streamlit", "Pandas", "ics"],
+    technologies: ["Next.js", "TypeScript"],
     role: "Full Stack Developer",
-    link: "https://skule-exams.streamlit.app/",
+    link: "/exams/",
     linkText: "Try it out!",
     color: "bg-gray-900",
     featured: false,
